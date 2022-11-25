@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -12,7 +13,47 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main>
+        {/* NavBar */}
+        <motion.nav
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              scale: 0.6,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: 0.4,
+              },
+            },
+          }}
+          className="text-black p-5 mb-6 flex justify-between slect-none"
+        >
+          <h1 className="text-l md:text-2xl">
+            .Code() <br /> .Data() <br /> .Automation()
+          </h1>
+          <ul className="flex items-center cusor-pointer text-m md:text-xl">
+            <li className="hover:scale-110 duration-100 py-1 hover:text-orange-100">
+              <Link href="/">Home</Link>
+            </li>
+            <li className="hover:scale-110 duration-100 py-1 hover:text-orange-100">
+              <Link className="ml-8" href="/about">
+                About Me
+              </Link>
+            </li>
+            <li className="hover:scale-110 duration-100 py-1 hover:text-orange-100">
+              <Link className="ml-8" href="/projects">
+                Projects
+              </Link>
+            </li>
+          </ul>
+        </motion.nav>
+
+        {/* Home Landing Section */}
         <motion.div
           initial="hidden"
           animate="visible"
@@ -29,8 +70,15 @@ export default function Home() {
               },
             },
           }}
+          className="text-black text-center p-10 md:px-20 lg:px-40"
         >
-          <h1 className="title">Leche Labs</h1>
+          <h2 className="text-3xl py-2 section-one-header md:text-5xl">
+            Leche Labs
+          </h2>
+          <h3 className="text-l py-2 section-one-header max-w-xl mx-auto md:text-2xl">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </h3>
         </motion.div>
       </main>
     </div>
