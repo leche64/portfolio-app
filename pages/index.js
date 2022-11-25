@@ -56,37 +56,39 @@ export default function Home() {
         {/* NavBar END*/}
 
         {/* HomeLandingSection START*/}
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={{
-            hidden: {
-              scale: 0.6,
-              opacity: 0,
-            },
-            visible: {
-              scale: 1,
-              opacity: 1,
-              transition: {
-                delay: 0.6,
+        <div className="bg-blue-200 h-screen">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: {
+                scale: 0.6,
+                opacity: 0,
               },
-            },
-          }}
-          className="text-black text-center p-10 h-screen md:px-20 lg:px-40"
-        >
-          <h2 className="text-3xl py-2 section-one-header md:text-5xl">
-            About Me
-          </h2>
-          <h3 className="text-l py-2 section-one-header max-w-xl mx-auto md:text-2xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </h3>
-        </motion.div>
+              visible: {
+                scale: 1,
+                opacity: 1,
+                transition: {
+                  delay: 0.6,
+                },
+              },
+            }}
+            className="text-black text-center p-10 md:px-20 lg:px-40"
+          >
+            <h2 className="text-3xl py-2 section-one-header md:text-5xl">
+              Leche Labs
+            </h2>
+            <h3 className="text-l py-2 section-one-header max-w-xl mx-auto md:text-2xl">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </h3>
+          </motion.div>
+        </div>
         {/* HomeLandingSection END*/}
 
         {/* SectionOne START*/}
         <div className="snap-start bg-amber-200 w-screen h-screen flex-items justify-center p-10 section-one-header">
-          <h2 className="text-3xl mb-5 md:text-5xl">Leche Labs</h2>
+          <h2 className="text-3xl mb-5 md:text-5xl">About Me</h2>
           <h3 className="text-l py-2 section-one-header max-w-xl md:text-2xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam
