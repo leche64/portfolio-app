@@ -116,7 +116,25 @@ export default function Home() {
 
           <div className="md:grid grid-cols-2 gap-5">
             {/* card 1 */}
-            <div className="text-center shadow-lg p-10 rounded-xl h-">
+            <motion.div
+              className="text-center shadow-lg p-10 rounded-xl max-w-lg mx-auto"
+              whileHover={{
+                position: "relative",
+                zIndex: 1,
+                background: "transparent",
+                scale: [1, 1.1, 1],
+                rotate: [0, 5, -5, 0],
+                filter: [
+                  "hue-rotate(0) contrast(100%)",
+                  "hue-rotate(360deg) contrast(200%)",
+                  "hue-rotate(45deg) contrast(300%)",
+                  "hue-rotate(0) contrast(100%)",
+                ],
+                transition: {
+                  duration: 0.2,
+                },
+              }}
+            >
               <Image className="mx-auto" src={ethLogo} width={25} height={25} />
               <h3 className="text-lg font-medium pt-5 pb-2">
                 Ethereum Wallet App
@@ -125,10 +143,28 @@ export default function Home() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-            </div>
+            </motion.div>
 
             {/* card 2 */}
-            <div className="text-center shadow-lg p-10 rounded-xl">
+            <motion.div
+              className="text-center shadow-lg p-10 rounded-xl max-w-lg mx-auto"
+              whileHover={{
+                position: "relative",
+                zIndex: 1,
+                background: "transparent",
+                scale: [1, 1.1, 1],
+                rotate: [0, 5, -5, 0],
+                filter: [
+                  "hue-rotate(0) contrast(100%)",
+                  "hue-rotate(360deg) contrast(200%)",
+                  "hue-rotate(45deg) contrast(300%)",
+                  "hue-rotate(0) contrast(100%)",
+                ],
+                transition: {
+                  duration: 0.2,
+                },
+              }}
+            >
               <Image
                 className="mx-auto"
                 src={deliveryLogo}
@@ -142,10 +178,28 @@ export default function Home() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-            </div>
+            </motion.div>
 
             {/* card 3 */}
-            <div className="text-center shadow-lg p-10 rounded-xl">
+            <motion.div
+              className="text-center shadow-lg p-10 rounded-xl max-w-lg mx-auto"
+              whileHover={{
+                position: "relative",
+                zIndex: 1,
+                background: "transparent",
+                scale: [1, 1.1, 1],
+                rotate: [0, 5, -5, 0],
+                filter: [
+                  "hue-rotate(0) contrast(100%)",
+                  "hue-rotate(360deg) contrast(200%)",
+                  "hue-rotate(45deg) contrast(300%)",
+                  "hue-rotate(0) contrast(100%)",
+                ],
+                transition: {
+                  duration: 0.2,
+                },
+              }}
+            >
               <Image
                 className="mx-auto"
                 src={dataLogo}
@@ -157,10 +211,28 @@ export default function Home() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-            </div>
+            </motion.div>
 
             {/* card 4 */}
-            <div className="text-center shadow-lg p-10 rounded-xl">
+            <motion.div
+              className="text-center shadow-lg p-10 rounded-xl max-w-lg mx-auto"
+              whileHover={{
+                position: "relative",
+                zIndex: 1,
+                background: "transparent",
+                scale: [1, 1.1, 1],
+                rotate: [0, 5, -5, 0],
+                filter: [
+                  "hue-rotate(0) contrast(100%)",
+                  "hue-rotate(360deg) contrast(200%)",
+                  "hue-rotate(45deg) contrast(300%)",
+                  "hue-rotate(0) contrast(100%)",
+                ],
+                transition: {
+                  duration: 0.2,
+                },
+              }}
+            >
               <Image
                 className="mx-auto"
                 src={computerLogo}
@@ -171,7 +243,7 @@ export default function Home() {
               <p className="py-2">
                 Something building in the background. Probably nothing.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </main>
