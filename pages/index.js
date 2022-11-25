@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -12,7 +13,25 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className="text-red-900 text-3xl font-bold underline">Hello world!</h1>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              scale: 0.6,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: 0.4,
+              },
+            },
+          }}
+        >
+          <h1 className="title">Leche Labs</h1>
+        </motion.div>
       </main>
     </div>
   );
