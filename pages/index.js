@@ -31,7 +31,7 @@ export default function Home() {
               },
             },
           }}
-          className="text-black p-5 mb-6 flex justify-between slect-none"
+          className="text-black p-5 mb-6 flex justify-between select-none"
         >
           <h1 className="text-l md:text-2xl">
             .Code() <br /> .Data() <br /> .Automation()
@@ -66,7 +66,7 @@ export default function Home() {
               scale: 1,
               opacity: 1,
               transition: {
-                delay: 0.4,
+                delay: 0.6,
               },
             },
           }}
