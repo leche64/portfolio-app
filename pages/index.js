@@ -4,6 +4,10 @@ import styles from "../styles/Home.module.css";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import orangeAbstract from "../public/img/orangeAbstract.png";
+import ethLogo from "../public/img/eth.svg";
+import deliveryLogo from "../public/img/delivery.svg";
+import dataLogo from "../public/img/data.svg";
+import computerLogo from "../public/img/computer.svg";
 
 export default function Home() {
   return (
@@ -89,27 +93,86 @@ export default function Home() {
         {/* SectionOne START*/}
         <div className="snap-start bg-amber-200 w-screen h-screen flex-items justify-center p-10 section-one-header">
           <h2 className="text-3xl mb-5 md:text-5xl">About Me</h2>
-          <h3 className="text-l py-2 section-one-header max-w-xl md:text-2xl">
+          <p className="text-l py-2 section-one-header max-w-xl md:text-2xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam
             ac tortor vitae purus faucibus ornare suspendisse sed. Urna cursus
             eget nunc scelerisque. Nisl suscipit adipiscing bibendum est
             ultricies integer quis.
-          </h3>
+          </p>
           <div className="mt-20 mx-auto w-80 h-80 m:flex m:w-40 m:h-40">
             <Image src={orangeAbstract} layout="cover" />
           </div>
         </div>
         {/* SectionOne END*/}
 
-        <div className="snap-start bg-teal-200 w-screen h-screen flex-items justify-center">
-          DEEEEEEE
-        </div>
-        <div className="snap-start bg-teacyanl-200 w-screen h-screen flex-items justify-center">
-          SHEHEHEHEHEH
-        </div>
-        <div className="snap-start bg-fuchsia-200 w-screen h-screen flex-items justify-center">
-          RRRRRRRRRR
+        {/* SectionTwo START*/}
+        <div className="snap-start bg-green-200 w-screen h-full flex-items justify-center p-10 section-one-header">
+          <h2 className="text-3xl mb-5 md:text-5xl">Projects</h2>
+          <p className="text-l py-2 section-one-header max-w-xl md:text-2xl">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          <div className="md:grid grid-cols-2 gap-5">
+            {/* card 1 */}
+            <div className="text-center shadow-lg p-10 rounded-xl h-">
+              <Image className="mx-auto" src={ethLogo} width={25} height={25} />
+              <h3 className="text-lg font-medium pt-5 pb-2">
+                Ethereum Wallet App
+              </h3>
+              <p className="py-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+
+            {/* card 2 */}
+            <div className="text-center shadow-lg p-10 rounded-xl">
+              <Image
+                className="mx-auto"
+                src={deliveryLogo}
+                width={25}
+                height={25}
+              />
+              <h3 className="text-lg font-medium pt-5 pb-2">
+                Omnia Delivery App
+              </h3>
+              <p className="py-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+
+            {/* card 3 */}
+            <div className="text-center shadow-lg p-10 rounded-xl">
+              <Image
+                className="mx-auto"
+                src={dataLogo}
+                width={25}
+                height={25}
+              />
+              <h3 className="text-lg font-medium pt-5 pb-2">Datakata</h3>
+              <p className="py-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+
+            {/* card 4 */}
+            <div className="text-center shadow-lg p-10 rounded-xl">
+              <Image
+                className="mx-auto"
+                src={computerLogo}
+                width={25}
+                height={25}
+              />
+              <h3 className="text-lg font-medium pt-5 pb-2">[REDACTED]</h3>
+              <p className="py-2">
+                Something building in the background. Probably nothing.
+              </p>
+            </div>
+          </div>
         </div>
       </main>
     </div>
