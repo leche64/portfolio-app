@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import orangeAbstract from "../public/img/orangeAbstract.png";
 
 export default function Home() {
   return (
@@ -74,7 +75,7 @@ export default function Home() {
           className="text-black text-center p-10 h-screen md:px-20 lg:px-40"
         >
           <h2 className="text-3xl py-2 section-one-header md:text-5xl">
-            Leche Labs
+            About Me
           </h2>
           <h3 className="text-l py-2 section-one-header max-w-xl mx-auto md:text-2xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -83,9 +84,22 @@ export default function Home() {
         </motion.div>
         {/* HomeLandingSection END*/}
 
-        <div className="snap-start bg-amber-200 w-screen h-screen flex-items justify-center">
-          AYOOO
+        {/* SectionOne START*/}
+        <div className="snap-start bg-amber-200 w-screen h-screen flex-items justify-center p-10 section-one-header">
+          <h2 className="text-3xl mb-5 md:text-5xl">Leche Labs</h2>
+          <h3 className="text-l py-2 section-one-header max-w-xl md:text-2xl">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam
+            ac tortor vitae purus faucibus ornare suspendisse sed. Urna cursus
+            eget nunc scelerisque. Nisl suscipit adipiscing bibendum est
+            ultricies integer quis.
+          </h3>
+          <div className="mt-20 mx-auto w-80 h-80 m:flex m:w-40 m:h-40">
+            <Image src={orangeAbstract} layout="cover" />
+          </div>
         </div>
+        {/* SectionOne END*/}
+
         <div className="snap-start bg-teal-200 w-screen h-screen flex-items justify-center">
           DEEEEEEE
         </div>
