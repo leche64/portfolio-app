@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
 
       <main>
-        {/* NavBar */}
+        {/* NavBar START*/}
         <motion.nav
           initial="hidden"
           animate="visible"
@@ -52,8 +52,9 @@ export default function Home() {
             </li>
           </ul>
         </motion.nav>
+        {/* NavBar END*/}
 
-        {/* Home Landing Section */}
+        {/* HomeLandingSection START*/}
         <motion.div
           initial="hidden"
           animate="visible"
@@ -80,6 +81,7 @@ export default function Home() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </h3>
         </motion.div>
+        {/* HomeLandingSection END*/}
       </main>
     </div>
   );
