@@ -141,7 +141,7 @@ export default function Home() {
         {/* HomeLandingSection END*/}
 
         {/* SectionOne START*/}
-        <div className="snap-start bg-amber-300 justify-center p-10 section-one-header">
+        <div className="snap-start bg-amber-300 justify-center p-10 section-one-header md:px-20 lg:px-30">
           <div>
             <motion.h2
               ref={aboutSectionRef}
@@ -163,16 +163,13 @@ export default function Home() {
               eget nunc scelerisque. Nisl suscipit adipiscing bibendum est
               ultricies integer quis.
             </motion.p>
-            </div>
-            <div className="w-1/4 w-max-2/4">
-              <Terminal />
-            </div>
-            
+          </div>
+            <Terminal />
         </div>
         {/* SectionOne END*/}
 
         {/* SectionTwo START*/}
-        <div className="snap-start text-neutral-200 bg-neutral-800 justify-center p-10 section-one-header">
+        <div className="snap-start text-neutral-200 bg-neutral-800 justify-center p-10 section-one-header md:px-20 lg:px-30">
           <motion.h2
             ref={projectSectionRef}
             className="text-3xl mb-5 md:text-5xl"
