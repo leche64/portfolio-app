@@ -11,7 +11,8 @@ import computerLogo from "../public/img/computer.svg";
 import monitorLogo from "../public/img/monitor.svg";
 import gearsLogo from "../public/img/gears.svg";
 import dataGraphLogo from "../public/img/dataGraph.svg";
-import WaveLine from "./WaveLine"
+import WaveLine from "./WaveLine";
+import WaveLineOrange from "./WaveLineOrange";
 
 import { useInView } from "react-intersection-observer";
 
@@ -119,7 +120,7 @@ export default function Home() {
             <h3 className="text-l italic py-2 section-one-header max-w-xl mx-auto md:text-2xl">
               Software Engineer
             </h3>
-            <WaveLine/>
+            <WaveLine />
             <div className="flex pt-5">
               <Image
                 className="mx-auto pt-5 w-1/6 md:w-2/12"
@@ -168,13 +169,22 @@ export default function Home() {
 
         {/* SectionTwo START*/}
         <div className="text-neutral-200 bg-neutral-800 justify-center p-10 section-one-header">
-          <h2 ref={projectSectionRef} className="text-3xl mb-5 md:text-5xl">
+          <motion.h2
+            ref={projectSectionRef}
+            className="text-3xl mb-5 md:text-5xl"
+            initial={{ opacity: 0.0 }}
+            whileInView={{ opacity: 1 }}
+          >
             Projects
-          </h2>
-          <p className="text-l py-2 section-one-header max-w-xl md:text-2xl">
+          </motion.h2>
+          <motion.p
+            className="text-l py-2 section-one-header max-w-xl md:text-2xl"
+            initial={{ opacity: 0.0 }}
+            whileInView={{ opacity: 1 }}
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+          </motion.p>
           {/* <p>{scrollSectionVisable ? "BING-BONG" : "NO"}</p>
           
           <p ref={iconRef}>
@@ -184,7 +194,9 @@ export default function Home() {
           <div className="md:grid grid-cols-2 gap-5">
             {/* card 1 */}
             <motion.div
-              className="text-center shadow-2xl p-10 rounded-xl max-w-lg mx-auto"
+              className="text-center shadow-lg p-10 rounded-xl max-w-lg mx-auto"
+              initial={{ opacity: 0.0 }}
+              whileInView={{ opacity: 1 }}
               whileHover={{
                 position: "relative",
                 zIndex: 1,
@@ -215,6 +227,8 @@ export default function Home() {
             {/* card 2 */}
             <motion.div
               className="text-center shadow-lg p-10 rounded-xl max-w-lg mx-auto"
+              initial={{ opacity: 0.0 }}
+              whileInView={{ opacity: 1 }}
               whileHover={{
                 position: "relative",
                 zIndex: 1,
@@ -250,6 +264,8 @@ export default function Home() {
             {/* card 3 */}
             <motion.div
               className="text-center shadow-lg p-10 rounded-xl max-w-lg mx-auto"
+              initial={{ opacity: 0.0 }}
+              whileInView={{ opacity: 1 }}
               whileHover={{
                 position: "relative",
                 zIndex: 1,
@@ -283,6 +299,8 @@ export default function Home() {
             {/* card 4 */}
             <motion.div
               className="text-center shadow-lg p-10 rounded-xl max-w-lg mx-auto"
+              initial={{ opacity: 0.0 }}
+              whileInView={{ opacity: 1 }}
               whileHover={{
                 position: "relative",
                 zIndex: 1,
