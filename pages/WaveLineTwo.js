@@ -9,7 +9,7 @@ const WaveLineTwo = () => {
         strokeWidth="10"
         initial={{ opacity: 0, pathLength: 0, pathOffset: 1 }}
         animate={{ opacity: 1, pathLength: 1, pathOffset: 0 }}
-        transition={{ duration: 2, ease: "easeInOut" }}
+        transition={{ duration: 2.5, ease: "easeInOut" }}
         whileInView={{ opacity: 1 }}
       />
     </svg>

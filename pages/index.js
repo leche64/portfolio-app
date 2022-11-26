@@ -150,7 +150,7 @@ export default function Home() {
         {/* HomeLandingSection END*/}
 
         {/* SectionOne START*/}
-        <div className="snap-start bg-amber-300 justify-center p-10 section-one-header md:px-20 lg:px-30">
+        <div className="snap-start bg-amber-200 justify-center p-10 section-one-header md:px-20 lg:px-30">
           <div>
             <motion.h2
               ref={aboutSectionRef}
@@ -167,11 +167,24 @@ export default function Home() {
               initial={{ opacity: 0.0 }}
               whileInView={{ opacity: 1 }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam
-              ac tortor vitae purus faucibus ornare suspendisse sed. Urna cursus
-              eget nunc scelerisque. Nisl suscipit adipiscing bibendum est
-              ultricies integer quis.
+              Hey! I'm Leche, a software developer, web3 advocate, and a
+              everyday student to life. I started out my love for tech young as
+              I probed through anything that had advanced settings
+              configurations. I had no idea what I was doing at the time, but
+              that same curosity has driven my quest for knowledge.
+              <br />
+              <br />
+              <br />
+              A majority of my software development experience comes from a
+              large financial services corporation, where for 6 years I lead,
+              developed and supported various applications as a hybrid software/data
+              engineer.
+              <br />
+              <br />
+              <br />
+              Currently, I am Fun-employed and open to opportunities. In the
+              meantime, I'll continue to build and dive down the web3 rabbit
+              hole.
             </motion.p>
           </div>
         </div>
@@ -212,8 +225,8 @@ export default function Home() {
                 position: "relative",
                 zIndex: 1,
                 background: "transparent",
-                scale: [1, 1.1, 1],
-                rotate: [0, 5, -5, 0],
+                scale: [1, 1.1],
+                rotate: [0, 2, 1, 0],
                 filter: [
                   "hue-rotate(0) contrast(100%)",
                   "hue-rotate(360deg) contrast(200%)",
@@ -244,8 +257,8 @@ export default function Home() {
                 position: "relative",
                 zIndex: 1,
                 background: "transparent",
-                scale: [1, 1.1, 1],
-                rotate: [0, 5, -5, 0],
+                scale: [1, 1.1],
+                rotate: [0, 2, 1, 0],
                 filter: [
                   "hue-rotate(0) contrast(100%)",
                   "hue-rotate(360deg) contrast(200%)",
@@ -281,8 +294,8 @@ export default function Home() {
                 position: "relative",
                 zIndex: 1,
                 background: "transparent",
-                scale: [1, 1.1, 1],
-                rotate: [0, 5, -5, 0],
+                scale: [1, 1.1],
+                rotate: [0, 2, 1, 0],
                 filter: [
                   "hue-rotate(0) contrast(100%)",
                   "hue-rotate(360deg) contrast(200%)",
@@ -316,8 +329,8 @@ export default function Home() {
                 position: "relative",
                 zIndex: 1,
                 background: "transparent",
-                scale: [1, 1.1, 1],
-                rotate: [0, 5, -5, 0],
+                scale: [1, 1.1],
+                rotate: [0, 2, 1, 0],
                 filter: [
                   "hue-rotate(0) contrast(100%)",
                   "hue-rotate(360deg) contrast(200%)",
