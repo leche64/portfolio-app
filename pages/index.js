@@ -11,6 +11,8 @@ import computerLogo from "../public/img/computer.svg";
 import monitorLogo from "../public/img/monitor.svg";
 import gearsLogo from "../public/img/gears.svg";
 import dataGraphLogo from "../public/img/dataGraph.svg";
+import WaveLine from "./WaveLine"
+
 import { useInView } from "react-intersection-observer";
 
 import { useRef, useEffect, useState } from "react";
@@ -44,7 +46,10 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
           rel="stylesheet"
         />
-        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap" rel="stylesheet"/>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <main>
@@ -114,6 +119,7 @@ export default function Home() {
             <h3 className="text-l italic py-2 section-one-header max-w-xl mx-auto md:text-2xl">
               Software Engineer
             </h3>
+            <WaveLine/>
             <div className="flex pt-5">
               <Image
                 className="mx-auto pt-5 w-1/6 md:w-2/12"
@@ -135,17 +141,28 @@ export default function Home() {
 
         {/* SectionOne START*/}
         <div className="snap-start bg-amber-300 justify-center p-10 section-one-header">
-          <h2 ref={aboutSectionRef} className="text-3xl mb-5 md:text-5xl">
-            About Me
-          </h2>
-          {/* <p>{aboutSectionVisable ? "BING-BONG" : "NO"}</p> */}
-          <p className="text-l py-2 section-one-header max-w-xl md:text-2xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam
-            ac tortor vitae purus faucibus ornare suspendisse sed. Urna cursus
-            eget nunc scelerisque. Nisl suscipit adipiscing bibendum est
-            ultricies integer quis.
-          </p>
+          <div>
+            <motion.h2
+              ref={aboutSectionRef}
+              className="text-3xl mb-5 md:text-5xl"
+              initial={{ opacity: 0.0 }}
+              whileInView={{ opacity: 1 }}
+            >
+              About Me
+            </motion.h2>
+            {/* <p>{aboutSectionVisable ? "BING-BONG" : "NO"}</p> */}
+            <motion.p
+              className="text-l py-2 section-one-header max-w-xl md:text-2xl"
+              initial={{ opacity: 0.0 }}
+              whileInView={{ opacity: 1 }}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam
+              ac tortor vitae purus faucibus ornare suspendisse sed. Urna cursus
+              eget nunc scelerisque. Nisl suscipit adipiscing bibendum est
+              ultricies integer quis.
+            </motion.p>
+          </div>
         </div>
         {/* SectionOne END*/}
 
