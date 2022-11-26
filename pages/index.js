@@ -3,7 +3,6 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import orangeAbstract from "../public/img/orangeAbstract.png";
 import ethLogo from "../public/img/eth.svg";
 import deliveryLogo from "../public/img/delivery.svg";
 import dataLogo from "../public/img/data.svg";
@@ -11,6 +10,7 @@ import computerLogo from "../public/img/computer.svg";
 import monitorLogo from "../public/img/monitor.svg";
 import gearsLogo from "../public/img/gears.svg";
 import dataGraphLogo from "../public/img/dataGraph.svg";
+import Typewriter from "typewriter-effect";
 
 import WaveLine from "./WaveLine";
 import WaveLineTwo from "./WaveLineTwo";
@@ -77,8 +77,15 @@ export default function Home() {
           className="snap-start text-neutral-200 bg-black p-8 flex justify-between select-none md:p-12 md:mb-0"
         >
           <h1 className="text-l md:text-2xl">
-            .Code() <br /> .Data() <br /> .Automation()
+            <Typewriter
+              options={{
+                strings: [".code()", ".data()",".automate()"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
           </h1>
+
           <ul className="flex items-center cusor-pointer text-m md:text-xl">
             <li className="hover:scale-110 duration-100 py-1 hover:text-orange-100">
               <Link href="/">Home</Link>
