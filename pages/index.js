@@ -139,8 +139,7 @@ export default function Home() {
             About Me
           </h2>
           {/* <p>{aboutSectionVisable ? "BING-BONG" : "NO"}</p> */}
-          {/* <p className="text-l py-2 section-one-header max-w-xl md:text-2xl"> */}
-          <p>
+          <p className="text-l py-2 section-one-header max-w-xl md:text-2xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam
             ac tortor vitae purus faucibus ornare suspendisse sed. Urna cursus
