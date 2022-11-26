@@ -16,9 +16,8 @@ import { useInView } from "react-intersection-observer";
 import { useRef, useEffect, useState } from "react";
 
 export default function Home() {
-  const { ref: myRef, inView: scrollSectionVisable } = useInView();
-  const { ref: iconRef, inView: iconIsVisible } = useInView();
-  const { ref: iconGearRef, inView: iconGearIsVisible } = useInView();
+  const { ref: projectSectionRef, inView: projectSectionVisable } = useInView();
+  const { ref: aboutSectionRef, inView: aboutSectionVisable } = useInView();
 
   // const myRef = useRef();
   // const [scrollSectionVisable, setScrollSectionVisable] = useState();
@@ -117,16 +116,24 @@ export default function Home() {
                 className="mx-auto pt-5 w-1/6 md:w-2/12"
                 src={dataGraphLogo}
               />
-              <Image ref={iconGearRef} className="mx-auto pt-5 w-1/6 md:w-2/12" src={gearsLogo} />
+              <Image className="mx-auto pt-5 w-1/6 md:w-2/12" src={gearsLogo} />
             </div>
+            <p>
+              {projectSectionVisable ? "I SEE YOU --> PROJECT TITLE" : "NO"}
+            </p>
+            <p>{aboutSectionVisable ? "I SEE YOU --> ABOUT ME TITLE" : "NO"}</p>
           </motion.div>
         </div>
         {/* HomeLandingSection END*/}
 
         {/* SectionOne START*/}
         <div className="snap-start bg-amber-300 justify-center p-10 section-one-header">
-          <h2 className="text-3xl mb-5 md:text-5xl">About Me</h2>
-          <p className="text-l py-2 section-one-header max-w-xl md:text-2xl">
+          <h2 ref={aboutSectionRef} className="text-3xl mb-5 md:text-5xl">
+            About Me
+          </h2>
+          {/* <p>{aboutSectionVisable ? "BING-BONG" : "NO"}</p> */}
+          {/* <p className="text-l py-2 section-one-header max-w-xl md:text-2xl"> */}
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam
             ac tortor vitae purus faucibus ornare suspendisse sed. Urna cursus
@@ -137,11 +144,10 @@ export default function Home() {
         {/* SectionOne END*/}
 
         {/* SectionTwo START*/}
-        <div
-          ref={myRef}
-          className="text-neutral-200 bg-neutral-800 justify-center p-10 section-one-header"
-        >
-          <h2 className="text-3xl mb-5 md:text-5xl">Projects</h2>
+        <div className="text-neutral-200 bg-neutral-800 justify-center p-10 section-one-header">
+          <h2 ref={projectSectionRef} className="text-3xl mb-5 md:text-5xl">
+            Projects
+          </h2>
           <p className="text-l py-2 section-one-header max-w-xl md:text-2xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.

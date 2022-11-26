@@ -3,6 +3,11 @@
   animation-name: animate-gear-icon;
 }
 
+.animateAboutSection {
+  animation-duration: 2s;
+  animation-name: animate-about-section;
+}
+
 @keyframes animate-gear-icon {
   0% {
     transform: scale(1) rotate(10deg);
@@ -12,5 +17,17 @@
   }
   100% {
     transform: scale(1) rotate(180deg);
+  }
+}
+
+@keyframes animate-about-section {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
   }
 }
