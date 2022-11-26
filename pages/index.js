@@ -12,7 +12,7 @@ import monitorLogo from "../public/img/monitor.svg";
 import gearsLogo from "../public/img/gears.svg";
 import dataGraphLogo from "../public/img/dataGraph.svg";
 import WaveLine from "./WaveLine";
-import WaveLineOrange from "./WaveLineOrange";
+import Terminal from "./Terminal";
 
 import { useInView } from "react-intersection-observer";
 
@@ -132,10 +132,10 @@ export default function Home() {
               />
               <Image className="mx-auto pt-5 w-1/6 md:w-2/12" src={gearsLogo} />
             </div>
-            <p>
+            {/* <p>
               {projectSectionVisable ? "I SEE YOU --> PROJECT TITLE" : "NO"}
             </p>
-            <p>{aboutSectionVisable ? "I SEE YOU --> ABOUT ME TITLE" : "NO"}</p>
+            <p>{aboutSectionVisable ? "I SEE YOU --> ABOUT ME TITLE" : "NO"}</p> */}
           </motion.div>
         </div>
         {/* HomeLandingSection END*/}
@@ -163,7 +163,11 @@ export default function Home() {
               eget nunc scelerisque. Nisl suscipit adipiscing bibendum est
               ultricies integer quis.
             </motion.p>
-          </div>
+            </div>
+            <div className="w-1/4 w-max-2/4">
+              <Terminal />
+            </div>
+            
         </div>
         {/* SectionOne END*/}
 
