@@ -11,8 +11,10 @@ import computerLogo from "../public/img/computer.svg";
 import monitorLogo from "../public/img/monitor.svg";
 import gearsLogo from "../public/img/gears.svg";
 import dataGraphLogo from "../public/img/dataGraph.svg";
+
 import WaveLine from "./WaveLine";
 import Terminal from "./Terminal";
+import CodeBracket from "./CodeBracket";
 
 import { useInView } from "react-intersection-observer";
 
@@ -145,10 +147,11 @@ export default function Home() {
           <div>
             <motion.h2
               ref={aboutSectionRef}
-              className="text-3xl mb-5 md:text-5xl"
+              className="text-3xl mb-5 md:text-5xl flex gap-3"
               initial={{ opacity: 0.0 }}
               whileInView={{ opacity: 1 }}
             >
+              <Terminal />
               About Me
             </motion.h2>
             {/* <p>{aboutSectionVisable ? "BING-BONG" : "NO"}</p> */}
@@ -164,7 +167,6 @@ export default function Home() {
               ultricies integer quis.
             </motion.p>
           </div>
-            <Terminal />
         </div>
         {/* SectionOne END*/}
 
@@ -172,10 +174,11 @@ export default function Home() {
         <div className="snap-start text-neutral-200 bg-neutral-800 justify-center p-10 section-one-header md:px-20 lg:px-30">
           <motion.h2
             ref={projectSectionRef}
-            className="text-3xl mb-5 md:text-5xl"
+            className="text-3xl mb-5 md:text-5xl flex gap-3"
             initial={{ opacity: 0.0 }}
             whileInView={{ opacity: 1 }}
           >
+            <CodeBracket />
             Projects
           </motion.h2>
           <motion.p
