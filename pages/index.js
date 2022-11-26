@@ -53,7 +53,7 @@ export default function Home() {
         />
       </Head>
 
-      <main>
+      <main className="snap-y h-screen w-screen overflow-scroll">
         {/* NavBar START*/}
         <motion.nav
           initial="hidden"
@@ -71,7 +71,7 @@ export default function Home() {
               },
             },
           }}
-          className="text-neutral-200 bg-black p-8 flex justify-between select-none snap-start md:p-12 md:mb-0"
+          className="snap-start text-neutral-200 bg-black p-8 flex justify-between select-none md:p-12 md:mb-0"
         >
           <h1 className="text-l md:text-2xl">
             .Code() <br /> .Data() <br /> .Automation()
@@ -168,7 +168,7 @@ export default function Home() {
         {/* SectionOne END*/}
 
         {/* SectionTwo START*/}
-        <div className="text-neutral-200 bg-neutral-800 justify-center p-10 section-one-header">
+        <div className="snap-start text-neutral-200 bg-neutral-800 justify-center p-10 section-one-header">
           <motion.h2
             ref={projectSectionRef}
             className="text-3xl mb-5 md:text-5xl"
@@ -330,6 +330,11 @@ export default function Home() {
               </p>
             </motion.div>
           </div>
+          <footer className="snap-start text-center mt-10">
+            <h1>Made with Love by Leche</h1>
+            <h1>Made with Love by Leche</h1>
+            <h1>Made with Love by Leche</h1>
+          </footer>
         </div>
       </main>
     </div>
