@@ -79,14 +79,13 @@ export default function Home() {
           <h1 className="text-l md:text-2xl">
             <Typewriter
               options={{
-                strings: [".code()", ".data()",".automate()"],
+                strings: [".code()", ".data()", ".automate()"],
                 autoStart: true,
                 loop: true,
               }}
             />
           </h1>
-
-          <ul className="flex items-center cusor-pointer text-m md:text-xl">
+          {/* <ul className="flex items-center cusor-pointer text-m md:text-xl">
             <li className="hover:scale-110 duration-100 py-1 hover:text-orange-100">
               <Link href="/">Home</Link>
             </li>
@@ -100,7 +99,7 @@ export default function Home() {
                 Projects
               </Link>
             </li>
-          </ul>
+          </ul> */}
         </motion.nav>
         {/* NavBar END*/}
 
