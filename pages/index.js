@@ -8,7 +8,9 @@ import ethLogo from "../public/img/eth.svg";
 import deliveryLogo from "../public/img/delivery.svg";
 import dataLogo from "../public/img/data.svg";
 import computerLogo from "../public/img/computer.svg";
-import rocketLogo from "../public/img/rocket.svg";
+import monitorLogo from "../public/img/monitor.svg";
+import gearsLogo from "../public/img/gears.svg";
+import dataGraphLogo from "../public/img/dataGraph.svg";
 import { useInView } from "react-intersection-observer";
 
 import { useRef, useEffect, useState } from "react";
@@ -16,6 +18,7 @@ import { useRef, useEffect, useState } from "react";
 export default function Home() {
   const { ref: myRef, inView: scrollSectionVisable } = useInView();
   const { ref: iconRef, inView: iconIsVisible } = useInView();
+  const { ref: iconGearRef, inView: iconGearIsVisible } = useInView();
 
   // const myRef = useRef();
   // const [scrollSectionVisable, setScrollSectionVisable] = useState();
@@ -56,7 +59,7 @@ export default function Home() {
               },
             },
           }}
-          className="text-black p-8 mb-6 flex justify-between select-none snap-start md:p-12 md:mb-0"
+          className="text-neutral-200 bg-black p-8 flex justify-between select-none snap-start md:p-12 md:mb-0"
         >
           <h1 className="text-l md:text-2xl">
             .Code() <br /> .Data() <br /> .Automation()
@@ -80,7 +83,7 @@ export default function Home() {
         {/* NavBar END*/}
 
         {/* HomeLandingSection START*/}
-        <div className="bg-blue-200">
+        <div className="bg-black">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -97,7 +100,7 @@ export default function Home() {
                 },
               },
             }}
-            className="text-black text-center p-10 md:px-20 lg:px-40"
+            className="text-neutral-100 text-center p-10 md:px-20 lg:px-40"
           >
             <h2 className="text-3xl py-2 section-one-header md:text-5xl">
               Leche Labs
@@ -105,12 +108,23 @@ export default function Home() {
             <h3 className="text-l italic py-2 section-one-header max-w-xl mx-auto md:text-2xl">
               Software Engineer
             </h3>
+            <div className="flex pt-5">
+              <Image
+                className="mx-auto pt-5 w-1/6 md:w-2/12"
+                src={monitorLogo}
+              />
+              <Image
+                className="mx-auto pt-5 w-1/6 md:w-2/12"
+                src={dataGraphLogo}
+              />
+              <Image ref={iconGearRef} className="mx-auto pt-5 w-1/6 md:w-2/12" src={gearsLogo} />
+            </div>
           </motion.div>
         </div>
         {/* HomeLandingSection END*/}
 
         {/* SectionOne START*/}
-        <div className="snap-start bg-amber-200 w-screen h-screen flex-items justify-center p-10 section-one-header">
+        <div className="snap-start bg-amber-300 justify-center p-10 section-one-header">
           <h2 className="text-3xl mb-5 md:text-5xl">About Me</h2>
           <p className="text-l py-2 section-one-header max-w-xl md:text-2xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -119,16 +133,13 @@ export default function Home() {
             eget nunc scelerisque. Nisl suscipit adipiscing bibendum est
             ultricies integer quis.
           </p>
-          <div className="mt-20 mx-auto w-80 h-80 m:flex m:w-40 m:h-40">
-            <Image src={orangeAbstract} layout="cover" />
-          </div>
         </div>
         {/* SectionOne END*/}
 
         {/* SectionTwo START*/}
         <div
           ref={myRef}
-          className="snap-start bg-green-200 w-screen h-full flex-items justify-center p-10 section-one-header"
+          className="text-neutral-200 bg-neutral-800 justify-center p-10 section-one-header"
         >
           <h2 className="text-3xl mb-5 md:text-5xl">Projects</h2>
           <p className="text-l py-2 section-one-header max-w-xl md:text-2xl">
@@ -144,7 +155,7 @@ export default function Home() {
           <div className="md:grid grid-cols-2 gap-5">
             {/* card 1 */}
             <motion.div
-              className="text-center shadow-lg p-10 rounded-xl max-w-lg mx-auto"
+              className="text-center shadow-2xl p-10 rounded-xl max-w-lg mx-auto"
               whileHover={{
                 position: "relative",
                 zIndex: 1,
