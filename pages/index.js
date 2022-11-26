@@ -8,8 +8,28 @@ import ethLogo from "../public/img/eth.svg";
 import deliveryLogo from "../public/img/delivery.svg";
 import dataLogo from "../public/img/data.svg";
 import computerLogo from "../public/img/computer.svg";
+import rocketLogo from "../public/img/rocket.svg";
+import { useInView } from "react-intersection-observer";
+
+import { useRef, useEffect, useState } from "react";
 
 export default function Home() {
+  const { ref: myRef, inView: scrollSectionVisable } = useInView();
+  const { ref: iconRef, inView: iconIsVisible } = useInView();
+
+  // const myRef = useRef();
+  // const [scrollSectionVisable, setScrollSectionVisable] = useState();
+  // console.log('scrollSectionVisable', scrollSectionVisable);
+
+  // useEffect(() => {
+  //   console.log("myRef", myRef.current);
+  //   const observer = new IntersectionObserver((entries) => {
+  //     const entry = entries[0];
+  //     setScrollSectionVisable(entry.isIntersecting);
+  //     console.log("entry", entry);
+  //   });
+  //   observer.observe(myRef.current);
+  // }, []);
   return (
     <div className="snap-y snap-mandatory h-screen w-screen overflow-scroll">
       <Head>
@@ -107,13 +127,21 @@ export default function Home() {
         {/* SectionOne END*/}
 
         {/* SectionTwo START*/}
-        <div className="snap-start bg-green-200 w-screen h-full flex-items justify-center p-10 section-one-header">
+        <div
+          ref={myRef}
+          className="snap-start bg-green-200 w-screen h-full flex-items justify-center p-10 section-one-header"
+        >
           <h2 className="text-3xl mb-5 md:text-5xl">Projects</h2>
           <p className="text-l py-2 section-one-header max-w-xl md:text-2xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-
+          <p>{scrollSectionVisable ? "BING-BONG" : "NO"}</p>
+          
+          <p ref={iconRef}>
+            <Image className={`${iconIsVisible ? styles.animateRocketIcon : ''}`} src={rocketLogo} width={25} height={25} />
+          </p>
+          
           <div className="md:grid grid-cols-2 gap-5">
             {/* card 1 */}
             <motion.div
