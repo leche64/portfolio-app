@@ -13,6 +13,7 @@ import gearsLogo from "../public/img/gears.svg";
 import dataGraphLogo from "../public/img/dataGraph.svg";
 
 import WaveLine from "./WaveLine";
+import WaveLineTwo from "./WaveLineTwo";
 import Terminal from "./Terminal";
 import CodeBracket from "./CodeBracket";
 
@@ -122,7 +123,7 @@ export default function Home() {
             <h3 className="text-l italic py-2 section-one-header max-w-xl mx-auto md:text-2xl">
               Software Engineer
             </h3>
-            <WaveLine />
+            <WaveLineTwo />
             <div className="flex pt-5">
               <Image
                 className="mx-auto pt-5 w-1/6 md:w-2/12"
