@@ -76,7 +76,7 @@ export default function Home() {
           }}
           className="snap-start text-neutral-200 bg-black p-8 flex justify-between select-none md:p-12 md:mb-0"
         >
-          <h1 className="text-l md:text-2xl">
+          <div className="text-l md:text-2xl">
             <Typewriter
               options={{
                 strings: [".code()", ".data()", ".automate()"],
@@ -84,7 +84,7 @@ export default function Home() {
                 loop: true,
               }}
             />
-          </h1>
+          </div>
           {/* <ul className="flex items-center cusor-pointer text-m md:text-xl">
             <li className="hover:scale-110 duration-100 py-1 hover:text-orange-100">
               <Link href="/">Home</Link>
@@ -121,11 +121,11 @@ export default function Home() {
                 },
               },
             }}
-            className="text-neutral-100 text-center p-10 md:px-20 lg:px-40"
+            className="text-neutral-100 font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-neutral-200 to-amber-800 text-center p-10 md:px-20 lg:px-40"
           >
-            <h2 className="text-3xl py-2 section-one-header md:text-5xl">
+            <h1 className="text-3xl py-2 section-one-header md:text-5xl">
               Leche Labs
-            </h2>
+            </h1>
             <h3 className="text-l italic py-2 section-one-header max-w-xl mx-auto md:text-2xl">
               Designer and Developer
             </h3>

@@ -10,7 +10,7 @@ body {
   background-color: black;
 }
 
-h2::selection {
+h1::selection {
   background: rgb(12, 177, 81)
 }
 
