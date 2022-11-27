@@ -74,7 +74,7 @@ export default function Home() {
               },
             },
           }}
-          className="sticky top-0 text-neutral-200 bg-black p-8 flex justify-between select-none md:p-12 md:mb-0"
+          className="text-neutral-200 bg-black p-8 flex justify-between select-none md:p-12 md:mb-0"
         >
           <h1 className="text-l md:text-2xl">
             <Typewriter
