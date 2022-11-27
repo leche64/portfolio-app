@@ -16,6 +16,7 @@ import WaveLine from "./WaveLine";
 import WaveLineTwo from "./WaveLineTwo";
 import Terminal from "./Terminal";
 import CodeBracket from "./CodeBracket";
+import Clock from "./Clock";
 
 import { FiTwitter, FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 
@@ -28,6 +29,43 @@ export default function Home() {
     useInView();
   const { ref: aboutSectionRef, inView: aboutSectionVisable } = useInView();
   const { ref: projectSectionRef, inView: projectSectionVisable } = useInView();
+
+  const [timerDays, setTimerDays] = useState();
+  const [timerHours, setTimerHour] = useState();
+  const [timerMinutes, setTimerMinutes] = useState();
+  const [timerSeconds, setTimerSeconds] = useState();
+
+  let interval;
+
+  const startTimer = () => {
+    const countDownDate = new Date("Jan 1, 2023").getTime();
+
+    interval = setInterval(() => {
+      const now = new Date().getTime();
+
+      const distance = countDownDate - now;
+
+      const days = Math.floor(distance / (24 * 60 * 60 * 1000));
+      const hours = Math.floor(
+        (distance % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor((distance % (60 * 60 * 1000)) / (1000 * 60));
+      const seconds = Math.floor((distance % (60 * 1000)) / 1000);
+
+      if (distance < 0) {
+        clearInterval(interval.current);
+      } else {
+        setTimerDays(days);
+        setTimerHour(hours);
+        setTimerMinutes(minutes);
+        setTimerSeconds(seconds);
+      }
+    });
+  };
+
+  useEffect(() => {
+    startTimer();
+  });
 
   // console.log(homeLandingSectionVisable, aboutSectionVisable, projectSectionVisable);
 
@@ -481,6 +519,13 @@ export default function Home() {
               />
               <h3 className="text-lg font-medium pt-5 pb-2">[REDACTED]</h3>
               <p className="py-2">Could be something. Probably nothing.</p>
+              {/* Pass props to components */}
+              <Clock
+                timerDays={timerDays}
+                timerHours={timerHours}
+                timerMinutes={timerMinutes}
+                timerSeconds={timerSeconds}
+              />
             </motion.div>
           </div>
           <footer className="text-center mt-10">
