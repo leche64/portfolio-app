@@ -399,15 +399,19 @@ export default function Home() {
                 },
               }}
             >
-              <Image className="mx-auto select-none" src={ethLogo} width={25} height={25} />
-              <h3 className="text-lg font-medium pt-5 pb-2">
-                Ethereum Wallet App
-              </h3>
+              <Image
+                className="mx-auto select-none"
+                src={dataLogo}
+                width={25}
+                height={25}
+              />
+              <h3 className="text-lg font-medium pt-5 pb-2">Datakata</h3>
               <p className="py-2">
-                Python script that interacts with the Ethereum blockchain via an
-                Infura node to retrieve ETH to USD holdings given a valid
-                Ethereum address. Nothing complex, just something as I dip my
-                toes into web3.
+                A complex data transformation pipeline containing various
+                microservices to extract, transform and load large quantities of
+                data. A challenging and rewarding project from my professional
+                career that helped significantly reduce cost and time, replacing
+                a deeply rooted legacy data application, awarded "TechXellence".
               </p>
             </motion.div>
 
@@ -450,7 +454,6 @@ export default function Home() {
                 cycle from design, prototype to end.
               </p>
             </motion.div>
-
             {/* card 3 */}
             <motion.div
               className="text-center shadow-lg p-10 rounded-xl min-w-fit"
@@ -475,20 +478,20 @@ export default function Home() {
             >
               <Image
                 className="mx-auto select-none"
-                src={dataLogo}
+                src={ethLogo}
                 width={25}
                 height={25}
               />
-              <h3 className="text-lg font-medium pt-5 pb-2">Datakata</h3>
+              <h3 className="text-lg font-medium pt-5 pb-2">
+                Ethereum Wallet App
+              </h3>
               <p className="py-2">
-                A complex data transformation pipeline containing various
-                microservices to extract, transform and load large quantities of
-                data. A challenging and rewarding project from my professional
-                career that helped significantly reduce cost and time, replacing
-                a deeply rooted legacy data application, awarded "TechXellence".
+                Python script that interacts with the Ethereum blockchain via an
+                Infura node to retrieve ETH to USD holdings given a valid
+                Ethereum address. Nothing complex, just something as I dip my
+                toes into web3.
               </p>
             </motion.div>
-
             {/* card 4 */}
             <motion.div
               className="text-center shadow-lg p-10 rounded-xl min-w-fit"
