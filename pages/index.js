@@ -17,13 +17,19 @@ import WaveLineTwo from "./WaveLineTwo";
 import Terminal from "./Terminal";
 import CodeBracket from "./CodeBracket";
 
+import { FiTwitter, FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+
 import { useInView } from "react-intersection-observer";
 
 import { useRef, useEffect, useState } from "react";
 
 export default function Home() {
-  const { ref: projectSectionRef, inView: projectSectionVisable } = useInView();
+  const { ref: homeLandingSectionRef, inView: homeLandingSectionVisable } =
+    useInView();
   const { ref: aboutSectionRef, inView: aboutSectionVisable } = useInView();
+  const { ref: projectSectionRef, inView: projectSectionVisable } = useInView();
+
+  console.log(homeLandingSectionVisable, aboutSectionVisable, projectSectionVisable);
 
   // const myRef = useRef();
   // const [scrollSectionVisable, setScrollSectionVisable] = useState();
@@ -56,7 +62,122 @@ export default function Home() {
         />
       </Head>
 
-      <main className="snap-y h-screen w-screen overflow-scroll">
+      <div className="absolute text-xl text-neutral-300 flex flex-col space-y-5 p-3 left-0 top-40">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          whileHover={{
+            scale: [1, 1.15, 1.25],
+            rotate: [0, 15, 5, -15, 0],
+            transition: {
+              duration: 0.1,
+            },
+          }}
+          variants={{
+            hidden: {
+              scale: 0.6,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: 0.6,
+              },
+            },
+          }}
+        >
+          <a href="https://twitter.com/home" target="_blank">
+            <FiTwitter className="cursor-pointer hover:text-green-200" />
+          </a>
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          whileHover={{
+            scale: [1, 1.15, 1.25],
+            rotate: [0, 15, 5, -15, 0],
+            transition: {
+              duration: 0.1,
+            },
+          }}
+          variants={{
+            hidden: {
+              scale: 0.6,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: 0.63,
+              },
+            },
+          }}
+        >
+          <a href="https://github.com/" target="_blank">
+            <FiGithub className="cursor-pointer hover:text-green-200" />
+          </a>
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          whileHover={{
+            scale: [1, 1.15, 1.25],
+            rotate: [0, 15, 5, -15, 0],
+            transition: {
+              duration: 0.1,
+            },
+          }}
+          variants={{
+            hidden: {
+              scale: 0.6,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: 0.66,
+              },
+            },
+          }}
+        >
+          <a href="https://www.linkedin.com/" target="_blank">
+            <FiLinkedin className="cursor-pointer hover:text-green-200" />
+          </a>
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          whileHover={{
+            scale: [1, 1.15, 1.25],
+            rotate: [0, 15, 5, -15, 0],
+            transition: {
+              duration: 0.1,
+            },
+          }}
+          variants={{
+            hidden: {
+              scale: 0.6,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: 0.66,
+              },
+            },
+          }}
+        >
+          <a href="https://www.google.com/" target="_blank">
+            <FiMail className="cursor-pointer hover:text-green-200" />
+          </a>
+        </motion.div>
+      </div>
+
+      <main className="snap-y h-screen w-screen overflow-scroll ">
         {/* NavBar START*/}
         <motion.nav
           initial="hidden"
@@ -104,7 +225,7 @@ export default function Home() {
         {/* NavBar END*/}
 
         {/* HomeLandingSection START*/}
-        <div className="bg-black">
+        <div ref={homeLandingSectionRef} className="bg-black">
           <motion.div
             initial="hidden"
             animate="visible"
@@ -117,16 +238,16 @@ export default function Home() {
                 scale: 1,
                 opacity: 1,
                 transition: {
-                  delay: 0.6,
+                  delay: 0.69,
                 },
               },
             }}
-            className="text-neutral-100 font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-neutral-200 to-amber-800 text-center p-10 select-none md:px-20 lg:px-40"
+            className="text-neutral-100 font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-neutral-300 to-white text-center p-10 select-none md:px-20 lg:px-40"
           >
             <h1 className="text-3xl py-2 section-one-header md:text-5xl">
               Leche Labs
             </h1>
-            <h3 className="text-l italic py-2 section-one-header max-w-xl mx-auto md:text-2xl">
+            <h3 className="text-xl italic py-2 section-one-header max-w-xl mx-auto md:text-2xl">
               Designer and Developer
             </h3>
             <WaveLineTwo />
@@ -147,7 +268,6 @@ export default function Home() {
             <p>{aboutSectionVisable ? "I SEE YOU --> ABOUT ME TITLE" : "NO"}</p> */}
           </motion.div>
         </div>
-        {/* HomeLandingSection END*/}
 
         {/* SectionOne START*/}
         <div className="snap-start bg-amber-200 justify-center p-10 section-one-header md:px-20 lg:px-30">
@@ -177,8 +297,8 @@ export default function Home() {
               <br />
               A majority of my software development experience comes from a
               large financial services corporation, where for 6 years I lead,
-              developed and supported various applications as a hybrid software/data
-              engineer.
+              developed and supported various applications as a hybrid
+              software/data engineer.
               <br />
               <br />
               <br />
