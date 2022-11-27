@@ -127,7 +127,7 @@ export default function Home() {
               Leche Labs
             </h2>
             <h3 className="text-l italic py-2 section-one-header max-w-xl mx-auto md:text-2xl">
-              Software Engineer
+              Designer and Developer
             </h3>
             <WaveLineTwo />
             <div className="flex pt-5">

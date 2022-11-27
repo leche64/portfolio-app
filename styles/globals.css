@@ -10,6 +10,18 @@ body {
   background-color: black;
 }
 
+h2::selection {
+  background: rgb(12, 177, 81)
+}
+
+h3::selection {
+  background: rgb(12, 177, 81)
+}
+
+p::selection {
+  background: rgb(12, 177, 81)
+}
+
 p {
   font-family: "Exo 2", sans-serif;
 }
