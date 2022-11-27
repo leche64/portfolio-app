@@ -56,7 +56,7 @@ export default function Home() {
         />
       </Head>
 
-      <main className="">
+      <main className="snap-y h-screen w-screen overflow-scroll">
         {/* NavBar START*/}
         <motion.nav
           initial="hidden"
@@ -74,7 +74,7 @@ export default function Home() {
               },
             },
           }}
-          className="text-neutral-200 bg-black p-8 flex justify-between select-none md:p-12 md:mb-0"
+          className="snap-start text-neutral-200 bg-black p-8 flex justify-between select-none md:p-12 md:mb-0"
         >
           <h1 className="text-l md:text-2xl">
             <Typewriter
@@ -150,7 +150,7 @@ export default function Home() {
         {/* HomeLandingSection END*/}
 
         {/* SectionOne START*/}
-        <div className="bg-amber-200 justify-center p-10 section-one-header md:px-20 lg:px-30">
+        <div className="snap-start bg-amber-200 justify-center p-10 section-one-header md:px-20 lg:px-30">
           <div>
             <motion.h2
               ref={aboutSectionRef}
@@ -191,7 +191,7 @@ export default function Home() {
         {/* SectionOne END*/}
 
         {/* SectionTwo START*/}
-        <div className="text-neutral-200 bg-neutral-800 justify-center p-10 section-one-header md:px-20 lg:px-30">
+        <div className="snap-start text-neutral-200 bg-neutral-800 justify-center p-10 section-one-header md:px-20 lg:px-30">
           <motion.h2
             ref={projectSectionRef}
             className="text-3xl mb-5 md:text-5xl flex gap-3"
@@ -354,7 +354,7 @@ export default function Home() {
               </p>
             </motion.div>
           </div>
-          <footer className="text-center mt-10">
+          <footer className="snap-start text-center mt-10">
             <h1>Made with Love by Leche</h1>
             <h1>Made with Love by Leche</h1>
             <h1>Made with Love by Leche</h1>
