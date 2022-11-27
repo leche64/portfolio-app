@@ -354,7 +354,7 @@ export default function Home() {
               </p>
             </motion.div>
           </div>
-          <footer className="snap-start text-center mt-10">
+          <footer className="text-center mt-10">
             <h1>Made with Love by Leche</h1>
             <h1>Made with Love by Leche</h1>
             <h1>Made with Love by Leche</h1>
