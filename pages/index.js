@@ -215,7 +215,7 @@ export default function Home() {
         </motion.div>
       </div>
 
-      <main className="snap-y h-screen w-screen overflow-scroll ">
+      <main className="snap-y h-screen w-screen overflow-scroll tracking-wide">
         {/* NavBar START*/}
         <motion.nav
           initial="hidden"
@@ -308,7 +308,7 @@ export default function Home() {
         </div>
 
         {/* SectionOne START*/}
-        <div className="snap-start bg-amber-400 justify-center p-10 section-one-header md:px-20 lg:px-30">
+        <div className="snap-start bg-indigo-700 text-neutral-200 justify-center p-10 section-one-header md:px-20 lg:px-30">
           <div>
             <motion.h2
               ref={aboutSectionRef}
@@ -379,7 +379,7 @@ export default function Home() {
           <div className="md:grid grid-cols-2 gap-5">
             {/* card 1 */}
             <motion.div
-              className="text-center shadow-lg p-10 rounded-xl max-w-lg mx-auto"
+              className="text-center shadow-lg p-10 rounded-xl min-w-fit"
               initial={{ opacity: 0.0 }}
               whileInView={{ opacity: 1 }}
               whileHover={{
@@ -399,7 +399,7 @@ export default function Home() {
                 },
               }}
             >
-              <Image className="mx-auto" src={ethLogo} width={25} height={25} />
+              <Image className="mx-auto select-none" src={ethLogo} width={25} height={25} />
               <h3 className="text-lg font-medium pt-5 pb-2">
                 Ethereum Wallet App
               </h3>
@@ -413,7 +413,7 @@ export default function Home() {
 
             {/* card 2 */}
             <motion.div
-              className="text-center shadow-lg p-10 rounded-xl max-w-lg mx-auto"
+              className="text-center shadow-lg p-10 rounded-xl min-w-fit"
               initial={{ opacity: 0.0 }}
               whileInView={{ opacity: 1 }}
               whileHover={{
@@ -434,7 +434,7 @@ export default function Home() {
               }}
             >
               <Image
-                className="mx-auto"
+                className="mx-auto select-none"
                 src={deliveryLogo}
                 width={25}
                 height={25}
@@ -453,7 +453,7 @@ export default function Home() {
 
             {/* card 3 */}
             <motion.div
-              className="text-center shadow-lg p-10 rounded-xl max-w-lg mx-auto"
+              className="text-center shadow-lg p-10 rounded-xl min-w-fit"
               initial={{ opacity: 0.0 }}
               whileInView={{ opacity: 1 }}
               whileHover={{
@@ -474,7 +474,7 @@ export default function Home() {
               }}
             >
               <Image
-                className="mx-auto"
+                className="mx-auto select-none"
                 src={dataLogo}
                 width={25}
                 height={25}
@@ -491,7 +491,7 @@ export default function Home() {
 
             {/* card 4 */}
             <motion.div
-              className="text-center shadow-lg p-10 rounded-xl max-w-lg mx-auto"
+              className="text-center shadow-lg p-10 rounded-xl min-w-fit"
               initial={{ opacity: 0.0 }}
               whileInView={{ opacity: 1 }}
               whileHover={{
@@ -512,7 +512,7 @@ export default function Home() {
               }}
             >
               <Image
-                className="mx-auto"
+                className="mx-auto select-none"
                 src={computerLogo}
                 width={25}
                 height={25}
@@ -528,7 +528,7 @@ export default function Home() {
               />
             </motion.div>
           </div>
-          <footer className="text-center mt-10">
+          <footer className="text-center mt-10 select-none">
             <h1>Made with Love by Leche</h1>
             <h1>Made with Love by Leche</h1>
             <h1>Made with Love by Leche</h1>

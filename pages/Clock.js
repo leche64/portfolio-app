@@ -3,7 +3,7 @@ import React, { Fragment, fragment } from "react";
 
 const Clock = ({ timerDays, timerHours, timerMinutes, timerSeconds }) => {
   return (
-      <div className="clock flex justify-center">
+      <div className="clock flex justify-center select-none">
         <section>
           <p>{timerDays}</p>
           <small>Days</small>
