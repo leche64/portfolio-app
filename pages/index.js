@@ -29,7 +29,7 @@ export default function Home() {
   const { ref: aboutSectionRef, inView: aboutSectionVisable } = useInView();
   const { ref: projectSectionRef, inView: projectSectionVisable } = useInView();
 
-  console.log(homeLandingSectionVisable, aboutSectionVisable, projectSectionVisable);
+  // console.log(homeLandingSectionVisable, aboutSectionVisable, projectSectionVisable);
 
   // const myRef = useRef();
   // const [scrollSectionVisable, setScrollSectionVisable] = useState();
@@ -248,7 +248,7 @@ export default function Home() {
               Leche Labs
             </h1>
             <h3 className="text-xl italic py-2 section-one-header max-w-xl mx-auto md:text-2xl">
-              Designer and Developer
+              Full Stack Developer
             </h3>
             <WaveLineTwo />
             <div className="flex pt-5">
@@ -270,7 +270,7 @@ export default function Home() {
         </div>
 
         {/* SectionOne START*/}
-        <div className="snap-start bg-amber-200 justify-center p-10 section-one-header md:px-20 lg:px-30">
+        <div className="snap-start bg-amber-400 justify-center p-10 section-one-header md:px-20 lg:px-30">
           <div>
             <motion.h2
               ref={aboutSectionRef}
@@ -287,24 +287,25 @@ export default function Home() {
               initial={{ opacity: 0.0 }}
               whileInView={{ opacity: 1 }}
             >
-              Hey! I'm Leche, a software developer, web3 advocate, and a
-              everyday student to life. I started out my love for tech young as
-              I probed through anything that had advanced settings
-              configurations. I had no idea what I was doing at the time, but
-              that same curosity has driven my quest for knowledge.
+              Hey! I'm Leche, a software developer, data wizard, and an everyday
+              student of life. I started my love for tech young as I probed
+              through anything that had advanced settings configurations. I had
+              no idea what I was doing at the time, but as I gained access to
+              the computer terminal, my love for code began.
               <br />
               <br />
               <br />
-              A majority of my software development experience comes from a
-              large financial services corporation, where for 6 years I lead,
-              developed and supported various applications as a hybrid
-              software/data engineer.
+              A majority of my professional software development experience
+              comes from a large financial services corporation, where for 6
+              years I lead, developed, and supported various applications as a
+              hybrid software/data engineer. Selected into their Technology
+              Development Program, I focused my time on leveraging new
+              technology to streamline legacy on-prem applications.
               <br />
               <br />
               <br />
-              Currently, I am Fun-employed and open to opportunities. In the
-              meantime, I'll continue to build and dive down the web3 rabbit
-              hole.
+              Currently, I am fun-employed and open to new opportunities. In the
+              meantime, I'll continue to learn, build, and experiment.
             </motion.p>
           </div>
         </div>
@@ -326,8 +327,10 @@ export default function Home() {
             initial={{ opacity: 0.0 }}
             whileInView={{ opacity: 1 }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Below are a few noticeable projects I've worked on in the past, both
+            from my professional and personal collections. A mix of complexity,
+            touching various languages (Python, Java, Scala) and frameworks/tech
+            (Node, React, Flask, Spark, AWS, Docker)
           </motion.p>
           {/* <p>{scrollSectionVisable ? "BING-BONG" : "NO"}</p>
           
@@ -363,8 +366,10 @@ export default function Home() {
                 Ethereum Wallet App
               </h3>
               <p className="py-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Python script that interacts with the Ethereum blockchain via an
+                Infura node to retrieve ETH to USD holdings given a valid
+                Ethereum address. Nothing complex, just something as I dip my
+                toes into web3.
               </p>
             </motion.div>
 
@@ -400,8 +405,11 @@ export default function Home() {
                 Omnia Delivery App
               </h3>
               <p className="py-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Web-based node application that allows geo-restricted orders
+                within a given area. Using various apis for backend services
+                (Google Maps, Twilio Auth, etc). A fun freelance project where I
+                leveraged Figma and other tools to complete the development
+                cycle from design, prototype to end.
               </p>
             </motion.div>
 
@@ -435,8 +443,11 @@ export default function Home() {
               />
               <h3 className="text-lg font-medium pt-5 pb-2">Datakata</h3>
               <p className="py-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                A complex data transformation pipeline containing various
+                microservices to extract, transform and load large quantities of
+                data. A challenging and rewarding project from my professional
+                career that helped significantly reduce cost and time, replacing
+                a deeply rooted legacy data application, awarded "TechXellence".
               </p>
             </motion.div>
 
@@ -469,9 +480,7 @@ export default function Home() {
                 height={25}
               />
               <h3 className="text-lg font-medium pt-5 pb-2">[REDACTED]</h3>
-              <p className="py-2">
-                Something building in the background. Probably nothing.
-              </p>
+              <p className="py-2">Could be something. Probably nothing.</p>
             </motion.div>
           </div>
           <footer className="text-center mt-10">
