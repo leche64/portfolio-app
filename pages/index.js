@@ -324,7 +324,7 @@ export default function Home() {
               initial={{ opacity: 0.0 }}
               whileInView={{ opacity: 1 }}
             >
-              Hey! I'm Leche, a software developer, data wizard, and an everyday
+              Hey! I&apos;m Leche, a software developer, data wizard, and an everyday
               student of life. I started my love for tech young as I probed
               through anything that had advanced settings configurations. I had
               no idea what I was doing at the time, but as I gained access to
@@ -349,7 +349,7 @@ export default function Home() {
               <br />
               <br />
               <br />
-              I've since left that position and currently exploring the world of
+              I&apos;ve since left that position and currently exploring the world of
               freelancing and web3, always welcoming new opportunities.
             </motion.p>
           </div>
@@ -372,7 +372,7 @@ export default function Home() {
             initial={{ opacity: 0.0 }}
             whileInView={{ opacity: 1 }}
           >
-            Below are a few favorite projects I've worked on in the past, both
+            Below are a few favorite projects I&apos;ve worked on in the past, both
             from my professional and personal collections. A mix of complexity,
             touching various languages{" "}
             <span className="italic underline underline-offset-2">(Python, Java, Scala) </span>and
