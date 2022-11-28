@@ -87,7 +87,7 @@ export default function Home() {
   //   observer.observe(myRef.current);
   // }, []);
   return (
-    <div className="">
+    <div>
       <Head>
         <title>Loc Nguyen</title>
         <meta name="description" content="AYO" />
@@ -227,9 +227,7 @@ export default function Home() {
         </motion.div>
       </div>
 
-      <Analytics />
-
-      <main className="snap-y h-screen w-screen overflow-scroll tracking-wide relative">
+      <main className="snap-y h-screen w-screen overflow-scroll tracking-wide">
         {/* NavBar START*/}
         <motion.nav
           initial="hidden"
@@ -247,7 +245,7 @@ export default function Home() {
               },
             },
           }}
-          className="snap-start text-neutral-200 bg-black p-8 flex justify-between select-none md:p-12 md:mb-0"
+          className="snap-start text-neutral-200 p-8 flex justify-between select-none md:p-12 md:mb-0"
         >
           <div className="text-l md:text-2xl">
             <Typewriter
@@ -262,7 +260,7 @@ export default function Home() {
         {/* NavBar END*/}
 
         {/* HomeLandingSection START*/}
-        <div ref={homeLandingSectionRef} className="bg-black">
+        <div ref={homeLandingSectionRef}>
           <motion.div
             initial="hidden"
             animate="visible"
