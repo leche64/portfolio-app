@@ -342,7 +342,7 @@ export default function Home() {
               <br />
               <br />
               <br />
-              I've since left that position and am currently exploring the world
+              I've since left that position and currently exploring the world
               of freelancing and web3, always welcoming to new opportunities.
             </motion.p>
           </div>
