@@ -324,11 +324,10 @@ export default function Home() {
               initial={{ opacity: 0.0 }}
               whileInView={{ opacity: 1 }}
             >
-              Hey! I&apos;m Leche, a software developer, data wizard, and an everyday
-              student of life. I started my love for tech young as I probed
-              through anything that had advanced settings configurations. I had
-              no idea what I was doing at the time, but as I gained access to
-              the computer terminal, my love for code began.
+              Hey! I&apos;m Loc, a full-stack software engineer with a love for data and analytics. I started my love for tech young as I
+              probed through anything that had advanced setting configurations.
+              I had no idea what I was doing at the time, but as I gained access
+              to the computer terminal, my love for code began.
               <br />
               <br />
               <br />A majority of my professional software development
