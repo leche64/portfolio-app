@@ -462,7 +462,7 @@ export default function Home() {
                 within a given area. Using various apis for backend services
                 (Google Maps, Twilio Auth, Stripe Payments, etc). A fun freelance project where I
                 leveraged Figma and other tools to complete the development
-                cycle from design, prototype to end.
+                cycle from design, prototype to code.
               </p>
             </motion.div>
             {/* card 3 */}
