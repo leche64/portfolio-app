@@ -531,7 +531,7 @@ export default function Home() {
               />
             </motion.div>
           </div>
-          <footer className="text-center mt-10 select-none">
+          <footer className="text-xs text-center mt-10 select-none">
             <h1>Made with Love by Leche</h1>
             <h1>Made with Love by Leche</h1>
             <h1>Made with Love by Leche</h1>
