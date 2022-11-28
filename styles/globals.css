@@ -25,6 +25,16 @@ p::selection {
   color: white;
 }
 
+span::selection {
+  background: rgb(12, 177, 81);
+  color: white;
+}
+
+a::selection {
+  background: rgb(12, 177, 81);
+  color: white;
+}
+
 p {
   font-family: "Exo 2", sans-serif;
 }

@@ -12,8 +12,7 @@ import gearsLogo from "../public/img/gears.svg";
 import dataGraphLogo from "../public/img/dataGraph.svg";
 import Typewriter from "typewriter-effect";
 
-import WaveLine from "./WaveLine";
-import WaveLineTwo from "./WaveLineTwo";
+import WaveLineGray from "./WaveLineGray";
 import Terminal from "./Terminal";
 import CodeBracket from "./CodeBracket";
 import Clock from "./Clock";
@@ -288,7 +287,7 @@ export default function Home() {
             <h3 className="text-xl italic py-2 section-one-header max-w-xl mx-auto md:text-2xl">
               Full stack developer based out in NYC building apps for the web
             </h3>
-            <WaveLineTwo />
+            <WaveLineGray />
             <div className="flex pt-5">
               <Image
                 className="mx-auto pt-5 w-1/6 md:w-2/12"
@@ -330,13 +329,12 @@ export default function Home() {
               through anything that had advanced settings configurations. I had
               no idea what I was doing at the time, but as I gained access to
               the computer terminal, my love for code began.
-              <br />s
               <br />
               <br />
-              A majority of my professional software development experience
-              comes from a large
+              <br />A majority of my professional software development
+              experience comes from a large{" "}
               <a
-                className="ml-1 italic underline underline-offset-2 hover:underline-offset-4"
+                className="italic underline underline-offset-2 hover:underline-offset-4"
                 href="https://www.capitalone.com/"
                 target="_blank"
               >
@@ -351,7 +349,7 @@ export default function Home() {
               <br />
               <br />
               I've since left that position and currently exploring the world of
-              freelancing and web3, always welcoming to new opportunities.
+              freelancing and web3, always welcoming new opportunities.
             </motion.p>
           </div>
         </div>
@@ -375,8 +373,13 @@ export default function Home() {
           >
             Below are a few noticeable projects I've worked on in the past, both
             from my professional and personal collections. A mix of complexity,
-            touching various languages (Python, Java, Scala) and frameworks/tech
-            (Node, React, Flask, Spark, AWS, Docker)
+            touching various languages{" "}
+            <span className="italic underline underline-offset-2">(Python, Java, Scala) </span>and
+            frameworks/tech{" "}
+            <span className="italic underline underline-offset-2">
+              {" "}
+              (Node, React, Flask, Spark, AWS, Docker)
+            </span>
           </motion.p>
           {/* <p>{scrollSectionVisable ? "BING-BONG" : "NO"}</p>
           
