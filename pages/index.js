@@ -353,9 +353,7 @@ export default function Home() {
               Hey! I&apos;m Loc, a full-stack software engineer with a love for
               code, data, and analytics. It started from building apps scraping
               data from the web to award-winning data transformation pipelines
-              and even apps interacting with the Ethereum blockchain. I usually
-              have no idea what I&apos;m doing at the time, but as I access the
-              computer terminal, my love for code begins.
+              and even apps interacting with the Ethereum blockchain.
               <br />
               <br />
               <br />A majority of my professional software development
