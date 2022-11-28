@@ -460,7 +460,7 @@ export default function Home() {
               <p className="py-2">
                 Web-based node application that allows geo-restricted orders
                 within a given area. Using various apis for backend services
-                (Google Maps, Twilio Auth, etc). A fun freelance project where I
+                (Google Maps, Twilio Auth, Stripe Payments, etc). A fun freelance project where I
                 leveraged Figma and other tools to complete the development
                 cycle from design, prototype to end.
               </p>
