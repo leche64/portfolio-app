@@ -280,13 +280,13 @@ export default function Home() {
                 },
               },
             }}
-            className="text-neutral-100 font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-neutral-300 to-white text-center p-10 select-none md:px-20 lg:px-40"
+            className="text-neutral-100 font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-neutral-300 to-neutral-200 text-center p-10 select-none md:px-20 lg:px-40"
           >
             <h1 className="text-3xl py-2 section-one-header md:text-5xl">
               Leche Labs
             </h1>
             <h3 className="text-xl italic py-2 section-one-header max-w-xl mx-auto md:text-2xl">
-              Full Stack Developer
+              Full stack developer based out in NYC building apps for the web
             </h3>
             <WaveLineTwo />
             <div className="flex pt-5">
@@ -330,20 +330,28 @@ export default function Home() {
               through anything that had advanced settings configurations. I had
               no idea what I was doing at the time, but as I gained access to
               the computer terminal, my love for code began.
-              <br />
+              <br />s
               <br />
               <br />
               A majority of my professional software development experience
-              comes from a large financial services corporation, where for 6
-              years I lead, developed, and supported various applications as a
-              hybrid software/data engineer. Selected into their Technology
-              Development Program, I focused my time on leveraging new
-              technology to streamline legacy on-prem applications.
+              comes from a large
+              <a
+                className="ml-1 italic underline underline-offset-2 hover:underline-offset-4"
+                href="https://www.capitalone.com/"
+                target="_blank"
+              >
+                financial services corporation
+              </a>
+              , where for 6 years I lead, developed, and supported various
+              applications as a hybrid software/data engineer. Selected into
+              their Technology Development Program, I focused my time on
+              leveraging new technology to streamline legacy on-prem
+              applications.
               <br />
               <br />
               <br />
-              I've since left that position and currently exploring the world
-              of freelancing and web3, always welcoming to new opportunities.
+              I've since left that position and currently exploring the world of
+              freelancing and web3, always welcoming to new opportunities.
             </motion.p>
           </div>
         </div>
