@@ -285,7 +285,7 @@ export default function Home() {
               Loc Nguyen
             </h1>
             <h3 className="text-xl italic py-2 section-one-header max-w-xl mx-auto md:text-2xl">
-              Full stack developer based out in NYC building apps for the web
+              Full stack developer based out of NYC building apps for the web
             </h3>
             <WaveLineGray />
             <div className="flex pt-5">
