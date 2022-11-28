@@ -124,7 +124,7 @@ export default function Home() {
             },
           }}
         >
-          <a href="https://twitter.com/home" target="_blank">
+          <a href="https://twitter.com/home" target="_blank" rel="noreferrer">
             <FiTwitter className="cursor-pointer hover:text-green-200" />
           </a>
         </motion.div>
@@ -152,7 +152,7 @@ export default function Home() {
             },
           }}
         >
-          <a href="https://github.com/" target="_blank">
+          <a href="https://github.com/" target="_blank" rel="noreferrer">
             <FiGithub className="cursor-pointer hover:text-green-200" />
           </a>
         </motion.div>
@@ -180,7 +180,7 @@ export default function Home() {
             },
           }}
         >
-          <a href="https://www.linkedin.com/" target="_blank">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
             <FiLinkedin className="cursor-pointer hover:text-green-200" />
           </a>
         </motion.div>
@@ -208,7 +208,7 @@ export default function Home() {
             },
           }}
         >
-          <a href="https://www.google.com/" target="_blank">
+          <a href="https://www.google.com/" target="_blank" rel="noreferrer">
             <FiMail className="cursor-pointer hover:text-green-200" />
           </a>
         </motion.div>
@@ -337,6 +337,7 @@ export default function Home() {
                 className="italic underline underline-offset-2 hover:underline-offset-4"
                 href="https://www.capitalone.com/"
                 target="_blank"
+                rel="noreferrer"
               >
                 financial services corporation
               </a>
@@ -371,7 +372,7 @@ export default function Home() {
             initial={{ opacity: 0.0 }}
             whileInView={{ opacity: 1 }}
           >
-            Below are a few noticeable projects I've worked on in the past, both
+            Below are a few favorite projects I've worked on in the past, both
             from my professional and personal collections. A mix of complexity,
             touching various languages{" "}
             <span className="italic underline underline-offset-2">(Python, Java, Scala) </span>and
