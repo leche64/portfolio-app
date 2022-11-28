@@ -547,7 +547,7 @@ export default function Home() {
               />
             </motion.div>
           </div>
-          <footer className="text-xs text-center mt-10 select-none">
+          <footer className="snap-start text-xs text-center mt-10 select-none">
             <h1>Made with Love by Loc</h1>
             <h1>Made with Love by Loc</h1>
             <h1>Made with Love by Loc</h1>
