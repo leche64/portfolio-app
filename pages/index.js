@@ -382,7 +382,7 @@ export default function Home() {
             and frameworks/tech{" "}
             <span className="italic underline underline-offset-2">
               {" "}
-              (Node, React, Flask, Spark, AWS, Docker)
+              (Node, React, Flask, Spark, Hadoop, AWS, Docker)
             </span>
           </motion.p>
           {/* <p>{scrollSectionVisable ? "BING-BONG" : "NO"}</p>
