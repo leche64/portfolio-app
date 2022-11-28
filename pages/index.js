@@ -376,8 +376,9 @@ export default function Home() {
               <br />
               <br />
               <br />
-              I&apos;ve since left that position and currently exploring the
-              world of freelancing and web3, always welcoming new opportunities.
+              I&apos;ve since left that position and am currently exploring the world
+              of freelancing and web3. My inbox is open to any new
+              opportunities, questions, or if you just want to say hi.
             </motion.p>
           </div>
         </div>
