@@ -10,6 +10,9 @@ import computerLogo from "../public/img/computer.svg";
 import monitorLogo from "../public/img/monitor.svg";
 import gearsLogo from "../public/img/gears.svg";
 import dataGraphLogo from "../public/img/dataGraph.svg";
+
+import AiLoop from "../public/img/00415.png";
+
 import Typewriter from "typewriter-effect";
 
 import WaveLineGray from "./WaveLineGray";
@@ -17,8 +20,7 @@ import Terminal from "./Terminal";
 import CodeBracket from "./CodeBracket";
 import Clock from "./Clock";
 
-import { Analytics } from '@vercel/analytics/react';
-
+import { Analytics } from "@vercel/analytics/react";
 
 import { FiTwitter, FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 
@@ -127,7 +129,11 @@ export default function Home() {
             },
           }}
         >
-          <a href="https://www.linkedin.com/in/loc-nguyen-nyc" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.linkedin.com/in/loc-nguyen-nyc"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FiLinkedin className="cursor-pointer hover:text-green-200" />
           </a>
         </motion.div>
@@ -211,14 +217,19 @@ export default function Home() {
             },
           }}
         >
-          <a href="mailto:loc.nguyen@tutanota.com" target="_blank" rel="noreferrer">
+          <a
+            href="mailto:loc.nguyen@tutanota.com"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FiMail className="cursor-pointer hover:text-green-200" />
           </a>
         </motion.div>
       </div>
 
       <Analytics />
-      <main className="snap-y h-screen w-screen overflow-scroll tracking-wide">
+
+      <main className="snap-y h-screen w-screen overflow-scroll tracking-wide relative">
         {/* NavBar START*/}
         <motion.nav
           initial="hidden"
@@ -247,22 +258,9 @@ export default function Home() {
               }}
             />
           </div>
-          {/* <ul className="flex items-center cusor-pointer text-m md:text-xl">
-            <li className="hover:scale-110 duration-100 py-1 hover:text-orange-100">
-              <Link href="/">Home</Link>
-            </li>
-            <li className="hover:scale-110 duration-100 py-1 hover:text-orange-100">
-              <Link className="ml-8" href="/about">
-                About Me
-              </Link>
-            </li>
-            <li className="hover:scale-110 duration-100 py-1 hover:text-orange-100">
-              <Link className="ml-8" href="/projects">
-                Projects
-              </Link>
-            </li>
-          </ul> */}
         </motion.nav>
+        <Image className="absolute right-2 top-2 w-1/6" src={AiLoop} />
+
         {/* NavBar END*/}
 
         {/* HomeLandingSection START*/}
