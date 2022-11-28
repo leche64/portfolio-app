@@ -423,7 +423,7 @@ export default function Home() {
                 microservices to extract, transform and load large quantities of
                 data. A challenging and rewarding project from my professional
                 career that helped significantly reduce cost and time, replacing
-                a deeply rooted legacy data application, awarded "TechXellence".
+                a deeply rooted legacy data application, awarded &quot;TechXellence&quot;.
               </p>
             </motion.div>
 
