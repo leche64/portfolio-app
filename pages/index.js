@@ -342,8 +342,8 @@ export default function Home() {
               <br />
               <br />
               <br />
-              Currently, I am fun-employed and open to new opportunities. In the
-              meantime, I'll continue to learn, build, and experiment.
+              I've since left that position and am currently exploring the world
+              of freelancing and web3, always welcoming to new opportunities.
             </motion.p>
           </div>
         </div>
