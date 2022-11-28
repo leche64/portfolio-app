@@ -124,7 +124,7 @@ export default function Home() {
             },
           }}
         >
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/loc-nguyen-nyc" target="_blank" rel="noreferrer">
             <FiLinkedin className="cursor-pointer hover:text-green-200" />
           </a>
         </motion.div>
@@ -152,7 +152,7 @@ export default function Home() {
             },
           }}
         >
-          <a href="https://github.com/" target="_blank" rel="noreferrer">
+          <a href="https://github.com/leche64" target="_blank" rel="noreferrer">
             <FiGithub className="cursor-pointer hover:text-green-200" />
           </a>
         </motion.div>
@@ -208,7 +208,7 @@ export default function Home() {
             },
           }}
         >
-          <a href="https://www.google.com/" target="_blank" rel="noreferrer">
+          <a href="mailto:loc.nguyen@tutanota.com" target="_blank" rel="noreferrer">
             <FiMail className="cursor-pointer hover:text-green-200" />
           </a>
         </motion.div>
