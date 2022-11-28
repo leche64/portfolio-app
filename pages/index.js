@@ -17,6 +17,9 @@ import Terminal from "./Terminal";
 import CodeBracket from "./CodeBracket";
 import Clock from "./Clock";
 
+import { Analytics } from '@vercel/analytics/react';
+
+
 import { FiTwitter, FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 
 import { useInView } from "react-intersection-observer";
@@ -214,6 +217,7 @@ export default function Home() {
         </motion.div>
       </div>
 
+      <Analytics />
       <main className="snap-y h-screen w-screen overflow-scroll tracking-wide">
         {/* NavBar START*/}
         <motion.nav
@@ -312,8 +316,21 @@ export default function Home() {
             <motion.h2
               ref={aboutSectionRef}
               className="text-3xl mb-5 md:text-5xl flex gap-3"
-              initial={{ opacity: 0.0 }}
-              whileInView={{ opacity: 1 }}
+              initial="hidden"
+              animate="visible"
+              variants={{
+                hidden: {
+                  scale: 0.6,
+                  opacity: 0,
+                },
+                visible: {
+                  scale: 1,
+                  opacity: 1,
+                  transition: {
+                    delay: 0.75,
+                  },
+                },
+              }}
             >
               <Terminal />
               About Me
@@ -321,8 +338,21 @@ export default function Home() {
             {/* <p>{aboutSectionVisable ? "BING-BONG" : "NO"}</p> */}
             <motion.p
               className="text-l py-2 section-one-header max-w-xl md:text-2xl"
-              initial={{ opacity: 0.0 }}
-              whileInView={{ opacity: 1 }}
+              initial="hidden"
+              animate="visible"
+              variants={{
+                hidden: {
+                  scale: 0.6,
+                  opacity: 0,
+                },
+                visible: {
+                  scale: 1,
+                  opacity: 1,
+                  transition: {
+                    delay: 0.75,
+                  },
+                },
+              }}
             >
               Hey! I&apos;m Loc, a full-stack software engineer with a love for
               code, data, and analytics. It started from building apps scraping
