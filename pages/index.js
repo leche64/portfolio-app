@@ -259,8 +259,6 @@ export default function Home() {
             />
           </div>
         </motion.nav>
-        <Image className="absolute right-2 top-2 w-1/6" src={AiLoop} />
-
         {/* NavBar END*/}
 
         {/* HomeLandingSection START*/}
