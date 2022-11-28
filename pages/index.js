@@ -124,8 +124,8 @@ export default function Home() {
             },
           }}
         >
-          <a href="https://twitter.com/home" target="_blank" rel="noreferrer">
-            <FiTwitter className="cursor-pointer hover:text-green-200" />
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+            <FiLinkedin className="cursor-pointer hover:text-green-200" />
           </a>
         </motion.div>
         <motion.div
@@ -180,8 +180,8 @@ export default function Home() {
             },
           }}
         >
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
-            <FiLinkedin className="cursor-pointer hover:text-green-200" />
+          <a href="https://twitter.com/home" target="_blank" rel="noreferrer">
+            <FiTwitter className="cursor-pointer hover:text-green-200" />
           </a>
         </motion.div>
         <motion.div
@@ -282,7 +282,7 @@ export default function Home() {
             className="text-neutral-100 font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-neutral-300 to-neutral-200 text-center p-10 select-none md:px-20 lg:px-40"
           >
             <h1 className="text-3xl py-2 section-one-header md:text-5xl">
-              Leche Labs
+              Loc Nguyen
             </h1>
             <h3 className="text-xl italic py-2 section-one-header max-w-xl mx-auto md:text-2xl">
               Full stack developer based out in NYC building apps for the web
@@ -349,8 +349,8 @@ export default function Home() {
               <br />
               <br />
               <br />
-              I&apos;ve since left that position and currently exploring the world of
-              freelancing and web3, always welcoming new opportunities.
+              I&apos;ve since left that position and currently exploring the
+              world of freelancing and web3, always welcoming new opportunities.
             </motion.p>
           </div>
         </div>
@@ -372,11 +372,13 @@ export default function Home() {
             initial={{ opacity: 0.0 }}
             whileInView={{ opacity: 1 }}
           >
-            Below are a few favorite projects I&apos;ve worked on in the past, both
-            from my professional and personal collections. A mix of complexity,
-            touching various languages{" "}
-            <span className="italic underline underline-offset-2">(Python, Java, Scala) </span>and
-            frameworks/tech{" "}
+            Below are a few favorite projects I&apos;ve worked on in the past,
+            both from my professional and personal collections. A mix of
+            complexity, touching various languages{" "}
+            <span className="italic underline underline-offset-2">
+              (Python, Java, Scala){" "}
+            </span>
+            and frameworks/tech{" "}
             <span className="italic underline underline-offset-2">
               {" "}
               (Node, React, Flask, Spark, AWS, Docker)
@@ -423,7 +425,8 @@ export default function Home() {
                 microservices to extract, transform and load large quantities of
                 data. A challenging and rewarding project from my professional
                 career that helped significantly reduce cost and time, replacing
-                a deeply rooted legacy data application, awarded &quot;TechXellence&quot;.
+                a deeply rooted legacy data application, awarded
+                &quot;TechXellence&quot;.
               </p>
             </motion.div>
 
@@ -461,9 +464,9 @@ export default function Home() {
               <p className="py-2">
                 Web-based node application that allows geo-restricted orders
                 within a given area. Using various apis for backend services
-                (Google Maps, Twilio SMS Auth, Stripe Payments, etc). A fun freelance project where I
-                leveraged Figma and other tools to complete the development
-                cycle from design, prototype to code.
+                (Google Maps, Twilio SMS Auth, Stripe Payments, etc). A fun
+                freelance project where I leveraged Figma and other tools to
+                complete the development cycle from design, prototype to code.
               </p>
             </motion.div>
             {/* card 3 */}
@@ -544,9 +547,9 @@ export default function Home() {
             </motion.div>
           </div>
           <footer className="text-xs text-center mt-10 select-none">
-            <h1>Made with Love by Leche</h1>
-            <h1>Made with Love by Leche</h1>
-            <h1>Made with Love by Leche</h1>
+            <h1>Made with Love by Loc</h1>
+            <h1>Made with Love by Loc</h1>
+            <h1>Made with Love by Loc</h1>
           </footer>
         </div>
       </main>
