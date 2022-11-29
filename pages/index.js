@@ -382,7 +382,7 @@ export default function Home() {
         {/* SectionOne END*/}
 
         {/* SectionTwo START*/}
-        <div className="snap-start text-neutral-200 bg-neutral-800 justify-center p-10 section-one-header md:px-20 lg:px-30">
+        <div className="text-neutral-200 bg-neutral-800 justify-center p-10 section-one-header md:px-20 lg:px-30">
           <motion.h2
             ref={projectSectionRef}
             className="text-3xl mb-5 md:text-5xl flex gap-3"
@@ -571,7 +571,7 @@ export default function Home() {
               />
             </motion.div>
           </div>
-          <footer className="snap-start text-xs text-center mt-10 select-none">
+          <footer className="text-xs text-center mt-10 select-none">
             <h1>Made with Love by Loc</h1>
             <h1>Made with Love by Loc</h1>
             <h1>Made with Love by Loc</h1>
