@@ -227,7 +227,7 @@ export default function Home() {
         </motion.div>
       </div>
 
-      <main className="tracking-wide">
+      <main className="snap-y h-screen w-screen overflow-scroll tracking-wide">
         {/* NavBar START*/}
         <motion.nav
           initial="hidden"
@@ -245,7 +245,7 @@ export default function Home() {
               },
             },
           }}
-          className="text-neutral-200 p-8 flex justify-between select-none md:p-12 md:mb-0"
+          className="snap-start text-neutral-200 p-8 flex justify-between select-none md:p-12 md:mb-0"
         >
           <div className="text-l md:text-2xl">
             <Typewriter
@@ -305,7 +305,7 @@ export default function Home() {
         </div>
 
         {/* SectionOne START*/}
-        <div className="bg-indigo-700 text-neutral-200 justify-center p-10 section-one-header md:px-20 lg:px-30">
+        <div className="snap-start bg-indigo-700 text-neutral-200 justify-center p-10 section-one-header md:px-20 lg:px-30">
           <div>
             <motion.h2
               ref={aboutSectionRef}
@@ -343,7 +343,7 @@ export default function Home() {
                   scale: 1,
                   opacity: 1,
                   transition: {
-                    delay: 0.75
+                    delay: 0.75,
                   },
                 },
               }}
