@@ -19,7 +19,6 @@ import WaveLineGray from "./WaveLineGray";
 import Terminal from "./Terminal";
 import CodeBracket from "./CodeBracket";
 import Clock from "./Clock";
-import AnimateSpan from "./AnimateSpan";
 
 import { Analytics } from "@vercel/analytics/react";
 
@@ -39,11 +38,6 @@ export default function Home() {
   const [timerHours, setTimerHour] = useState();
   const [timerMinutes, setTimerMinutes] = useState();
   const [timerSeconds, setTimerSeconds] = useState();
-
-  const animateSentanceOne = "Loc Nguyen".split("");
-
-  const animateSentanceTwo =
-    "Full stack developer based out of NYC building apps for the web".split("");
 
   let interval;
 
@@ -286,25 +280,11 @@ export default function Home() {
             className="text-neutral-100 font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-neutral-300 to-neutral-200 text-center p-10 select-none md:px-20 lg:px-40"
           >
             <h1 className="text-3xl py-2 section-one-header md:text-5xl">
-              {animateSentanceOne.map((letter, index) => {
-                return (
-                  <AnimateSpan key={index}>
-                    {letter === " " ? "\u00A0" : letter}
-                  </AnimateSpan>
-                );
-              })}
+              Loc Nguyen
             </h1>
-
             <h3 className="text-xl italic py-2 section-one-header max-w-xl mx-auto md:text-2xl">
-              {animateSentanceTwo.map((letter, index) => {
-                return (
-                  <AnimateSpan key={index}>
-                    {letter === " " ? "\u00A0" : letter}
-                  </AnimateSpan>
-                );
-              })}
+              Full stack developer based out of NYC building apps for the web
             </h3>
-
             <WaveLineGray />
             <div className="flex pt-5">
               <Image
