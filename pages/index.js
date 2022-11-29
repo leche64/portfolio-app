@@ -354,7 +354,12 @@ export default function Home() {
               with the Ethereum blockchain and even award-winning data
               transformation pipelines.
               <br />
-              <br />
+            </motion.p>
+            <motion.p
+              className="text-l py-2 section-one-header max-w-xl md:text-2xl"
+              initial={{ opacity: 0.0 }}
+              whileInView={{ opacity: 1 }}
+            >
               <br />A majority of my professional software development
               experience comes from a large{" "}
               <a
@@ -372,7 +377,12 @@ export default function Home() {
               applications.
               <br />
               <br />
-              <br />
+            </motion.p>
+            <motion.p
+              className="text-l py-2 section-one-header max-w-xl md:text-2xl"
+              initial={{ opacity: 0.0 }}
+              whileInView={{ opacity: 1 }}
+            >
               I&apos;ve since left that position and am currently exploring the
               world of freelancing and web3. My inbox is open to any new
               opportunities, questions, or if you just want to say hi.
