@@ -227,7 +227,7 @@ export default function Home() {
         </motion.div>
       </div>
 
-      <main className="snap-y h-screen w-screen overflow-scroll tracking-wide">
+      <main className="h-screen w-screen overflow-scroll tracking-wide">
         {/* NavBar START*/}
         <motion.nav
           initial="hidden"
