@@ -310,21 +310,8 @@ export default function Home() {
             <motion.h2
               ref={aboutSectionRef}
               className="text-3xl mb-5 md:text-5xl flex gap-3"
-              initial="hidden"
-              animate="visible"
-              variants={{
-                hidden: {
-                  scale: 0.6,
-                  opacity: 0,
-                },
-                visible: {
-                  scale: 1,
-                  opacity: 1,
-                  transition: {
-                    delay: 0.75,
-                  },
-                },
-              }}
+              initial={{ opacity: 0.0 }}
+              whileInView={{ opacity: 1 }}
             >
               <Terminal />
               About Me
@@ -332,21 +319,8 @@ export default function Home() {
             {/* <p>{aboutSectionVisable ? "BING-BONG" : "NO"}</p> */}
             <motion.p
               className="text-l py-2 section-one-header max-w-xl md:text-2xl"
-              initial="hidden"
-              animate="visible"
-              variants={{
-                hidden: {
-                  scale: 0.6,
-                  opacity: 0,
-                },
-                visible: {
-                  scale: 1,
-                  opacity: 1,
-                  transition: {
-                    delay: 0.75,
-                  },
-                },
-              }}
+              initial={{ opacity: 0.0 }}
+              whileInView={{ opacity: 1 }}
             >
               Hey! I&apos;m Loc, a full-stack software engineer with a love for
               code, data, and analytics. My passion for tech started young from
@@ -354,7 +328,12 @@ export default function Home() {
               with the Ethereum blockchain and even award-winning data
               transformation pipelines.
               <br />
-              <br />
+            </motion.p>
+            <motion.p
+              className="text-l py-2 section-one-header max-w-xl md:text-2xl"
+              initial={{ opacity: 0.0 }}
+              whileInView={{ opacity: 1 }}
+            >
               <br />A majority of my professional software development
               experience comes from a large{" "}
               <a
@@ -373,6 +352,11 @@ export default function Home() {
               <br />
               <br />
               <br />
+              </motion.p>
+            <motion.p
+              className="text-l py-2 section-one-header max-w-xl md:text-2xl"
+              initial={{ opacity: 0.0 }}
+              whileInView={{ opacity: 1 }}>
               I&apos;ve since left that position and am currently exploring the
               world of freelancing and web3. My inbox is open to any new
               opportunities, questions, or if you just want to say hi.
@@ -422,11 +406,7 @@ export default function Home() {
               initial={{ opacity: 0.0 }}
               whileInView={{ opacity: 1 }}
               whileHover={{
-                position: "relative",
-                zIndex: 1,
-                background: "transparent",
                 scale: [1, 1.1],
-                rotate: [0, 2, 1, 0],
                 filter: [
                   "hue-rotate(0) contrast(100%)",
                   "hue-rotate(360deg) contrast(200%)",
@@ -461,11 +441,7 @@ export default function Home() {
               initial={{ opacity: 0.0 }}
               whileInView={{ opacity: 1 }}
               whileHover={{
-                position: "relative",
-                zIndex: 1,
-                background: "transparent",
                 scale: [1, 1.1],
-                rotate: [0, 2, 1, 0],
                 filter: [
                   "hue-rotate(0) contrast(100%)",
                   "hue-rotate(360deg) contrast(200%)",
@@ -500,11 +476,7 @@ export default function Home() {
               initial={{ opacity: 0.0 }}
               whileInView={{ opacity: 1 }}
               whileHover={{
-                position: "relative",
-                zIndex: 1,
-                background: "transparent",
                 scale: [1, 1.1],
-                rotate: [0, 2, 1, 0],
                 filter: [
                   "hue-rotate(0) contrast(100%)",
                   "hue-rotate(360deg) contrast(200%)",
@@ -538,11 +510,7 @@ export default function Home() {
               initial={{ opacity: 0.0 }}
               whileInView={{ opacity: 1 }}
               whileHover={{
-                position: "relative",
-                zIndex: 1,
-                background: "transparent",
                 scale: [1, 1.1],
-                rotate: [0, 2, 1, 0],
                 filter: [
                   "hue-rotate(0) contrast(100%)",
                   "hue-rotate(360deg) contrast(200%)",
