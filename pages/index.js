@@ -11,8 +11,6 @@ import monitorLogo from "../public/img/monitor.svg";
 import gearsLogo from "../public/img/gears.svg";
 import dataGraphLogo from "../public/img/dataGraph.svg";
 
-import AiLoop from "../public/img/00415.png";
-
 import Typewriter from "typewriter-effect";
 
 import WaveLineGray from "./WaveLineGray";
