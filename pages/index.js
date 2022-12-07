@@ -406,7 +406,7 @@ export default function Home() {
               initial={{ opacity: 0.0 }}
               whileInView={{ opacity: 1 }}
               whileHover={{
-                scale: [1, 1.1],
+                scale: [1, 1.05],
                 filter: [
                   "hue-rotate(0) contrast(100%)",
                   "hue-rotate(360deg) contrast(200%)",
@@ -441,7 +441,7 @@ export default function Home() {
               initial={{ opacity: 0.0 }}
               whileInView={{ opacity: 1 }}
               whileHover={{
-                scale: [1, 1.1],
+                scale: [1, 1.05],
                 filter: [
                   "hue-rotate(0) contrast(100%)",
                   "hue-rotate(360deg) contrast(200%)",
@@ -476,7 +476,7 @@ export default function Home() {
               initial={{ opacity: 0.0 }}
               whileInView={{ opacity: 1 }}
               whileHover={{
-                scale: [1, 1.1],
+                scale: [1, 1.05],
                 filter: [
                   "hue-rotate(0) contrast(100%)",
                   "hue-rotate(360deg) contrast(200%)",
@@ -510,7 +510,7 @@ export default function Home() {
               initial={{ opacity: 0.0 }}
               whileInView={{ opacity: 1 }}
               whileHover={{
-                scale: [1, 1.1],
+                scale: [1, 1.05],
                 filter: [
                   "hue-rotate(0) contrast(100%)",
                   "hue-rotate(360deg) contrast(200%)",
