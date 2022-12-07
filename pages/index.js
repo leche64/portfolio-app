@@ -112,7 +112,7 @@ export default function Home() {
             scale: [1, 1.15, 1.25],
             rotate: [0, 15, 5, -15, 0],
             transition: {
-              duration: 0.1,
+              duration: 0.22,
             },
           }}
           variants={{
@@ -144,7 +144,7 @@ export default function Home() {
             scale: [1, 1.15, 1.25],
             rotate: [0, 15, 5, -15, 0],
             transition: {
-              duration: 0.1,
+              duration: 0.22,
             },
           }}
           variants={{
@@ -172,7 +172,7 @@ export default function Home() {
             scale: [1, 1.15, 1.25],
             rotate: [0, 15, 5, -15, 0],
             transition: {
-              duration: 0.1,
+              duration: 0.22,
             },
           }}
           variants={{
@@ -200,7 +200,7 @@ export default function Home() {
             scale: [1, 1.15, 1.25],
             rotate: [0, 15, 5, -15, 0],
             transition: {
-              duration: 0.1,
+              duration: 0.22,
             },
           }}
           variants={{
