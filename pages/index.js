@@ -11,8 +11,6 @@ import monitorLogo from "../public/img/monitor.svg";
 import gearsLogo from "../public/img/gears.svg";
 import dataGraphLogo from "../public/img/dataGraph.svg";
 
-import AiLoop from "../public/img/00415.png";
-
 import Typewriter from "typewriter-effect";
 
 import WaveLineGray from "./WaveLineGray";
@@ -112,7 +110,7 @@ export default function Home() {
             scale: [1, 1.15, 1.25],
             rotate: [0, 15, 5, -15, 0],
             transition: {
-              duration: 0.1,
+              duration: 0.22,
             },
           }}
           variants={{
@@ -144,7 +142,7 @@ export default function Home() {
             scale: [1, 1.15, 1.25],
             rotate: [0, 15, 5, -15, 0],
             transition: {
-              duration: 0.1,
+              duration: 0.22,
             },
           }}
           variants={{
@@ -172,7 +170,7 @@ export default function Home() {
             scale: [1, 1.15, 1.25],
             rotate: [0, 15, 5, -15, 0],
             transition: {
-              duration: 0.1,
+              duration: 0.22,
             },
           }}
           variants={{
@@ -200,7 +198,7 @@ export default function Home() {
             scale: [1, 1.15, 1.25],
             rotate: [0, 15, 5, -15, 0],
             transition: {
-              duration: 0.1,
+              duration: 0.22,
             },
           }}
           variants={{
@@ -277,7 +275,7 @@ export default function Home() {
                 },
               },
             }}
-            className="text-neutral-100 font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-neutral-300 to-neutral-200 text-center p-10 select-none md:px-20 lg:px-40"
+            className="text-neutral-100 font-extrabold text-center p-10 select-none md:px-20 lg:px-40"
           >
             <h1 className="text-3xl py-2 section-one-header md:text-5xl">
               Loc Nguyen
@@ -310,21 +308,8 @@ export default function Home() {
             <motion.h2
               ref={aboutSectionRef}
               className="text-3xl mb-5 md:text-5xl flex gap-3"
-              initial="hidden"
-              animate="visible"
-              variants={{
-                hidden: {
-                  scale: 0.6,
-                  opacity: 0,
-                },
-                visible: {
-                  scale: 1,
-                  opacity: 1,
-                  transition: {
-                    delay: 0.75,
-                  },
-                },
-              }}
+              initial={{ opacity: 0.0 }}
+              whileInView={{ opacity: 1 }}
             >
               <Terminal />
               About Me
@@ -332,21 +317,8 @@ export default function Home() {
             {/* <p>{aboutSectionVisable ? "BING-BONG" : "NO"}</p> */}
             <motion.p
               className="text-l py-2 section-one-header max-w-xl md:text-2xl"
-              initial="hidden"
-              animate="visible"
-              variants={{
-                hidden: {
-                  scale: 0.6,
-                  opacity: 0,
-                },
-                visible: {
-                  scale: 1,
-                  opacity: 1,
-                  transition: {
-                    delay: 0.75,
-                  },
-                },
-              }}
+              initial={{ opacity: 0.0 }}
+              whileInView={{ opacity: 1 }}
             >
               Hey! I&apos;m Loc, a full-stack software engineer with a love for
               code, data, and analytics. My passion for tech started young from
@@ -354,7 +326,12 @@ export default function Home() {
               with the Ethereum blockchain and even award-winning data
               transformation pipelines.
               <br />
-              <br />
+            </motion.p>
+            <motion.p
+              className="text-l py-2 section-one-header max-w-xl md:text-2xl"
+              initial={{ opacity: 0.0 }}
+              whileInView={{ opacity: 1 }}
+            >
               <br />A majority of my professional software development
               experience comes from a large{" "}
               <a
@@ -373,6 +350,11 @@ export default function Home() {
               <br />
               <br />
               <br />
+              </motion.p>
+            <motion.p
+              className="text-l py-2 section-one-header max-w-xl md:text-2xl"
+              initial={{ opacity: 0.0 }}
+              whileInView={{ opacity: 1 }}>
               I&apos;ve since left that position and am currently exploring the
               world of freelancing and web3. My inbox is open to any new
               opportunities, questions, or if you just want to say hi.
@@ -422,17 +404,7 @@ export default function Home() {
               initial={{ opacity: 0.0 }}
               whileInView={{ opacity: 1 }}
               whileHover={{
-                position: "relative",
-                zIndex: 1,
-                background: "transparent",
-                scale: [1, 1.1],
-                rotate: [0, 2, 1, 0],
-                filter: [
-                  "hue-rotate(0) contrast(100%)",
-                  "hue-rotate(360deg) contrast(200%)",
-                  "hue-rotate(45deg) contrast(300%)",
-                  "hue-rotate(0) contrast(100%)",
-                ],
+                scale: [1, 1.05],
                 transition: {
                   duration: 0.2,
                 },
@@ -461,17 +433,7 @@ export default function Home() {
               initial={{ opacity: 0.0 }}
               whileInView={{ opacity: 1 }}
               whileHover={{
-                position: "relative",
-                zIndex: 1,
-                background: "transparent",
-                scale: [1, 1.1],
-                rotate: [0, 2, 1, 0],
-                filter: [
-                  "hue-rotate(0) contrast(100%)",
-                  "hue-rotate(360deg) contrast(200%)",
-                  "hue-rotate(45deg) contrast(300%)",
-                  "hue-rotate(0) contrast(100%)",
-                ],
+                scale: [1, 1.05],
                 transition: {
                   duration: 0.2,
                 },
@@ -500,17 +462,7 @@ export default function Home() {
               initial={{ opacity: 0.0 }}
               whileInView={{ opacity: 1 }}
               whileHover={{
-                position: "relative",
-                zIndex: 1,
-                background: "transparent",
-                scale: [1, 1.1],
-                rotate: [0, 2, 1, 0],
-                filter: [
-                  "hue-rotate(0) contrast(100%)",
-                  "hue-rotate(360deg) contrast(200%)",
-                  "hue-rotate(45deg) contrast(300%)",
-                  "hue-rotate(0) contrast(100%)",
-                ],
+                scale: [1, 1.05],
                 transition: {
                   duration: 0.2,
                 },
@@ -538,17 +490,7 @@ export default function Home() {
               initial={{ opacity: 0.0 }}
               whileInView={{ opacity: 1 }}
               whileHover={{
-                position: "relative",
-                zIndex: 1,
-                background: "transparent",
-                scale: [1, 1.1],
-                rotate: [0, 2, 1, 0],
-                filter: [
-                  "hue-rotate(0) contrast(100%)",
-                  "hue-rotate(360deg) contrast(200%)",
-                  "hue-rotate(45deg) contrast(300%)",
-                  "hue-rotate(0) contrast(100%)",
-                ],
+                scale: [1, 1.05],
                 transition: {
                   duration: 0.2,
                 },
