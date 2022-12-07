@@ -277,7 +277,7 @@ export default function Home() {
                 },
               },
             }}
-            className="text-neutral-100 font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-neutral-300 to-neutral-200 text-center p-10 select-none md:px-20 lg:px-40"
+            className="text-neutral-100 font-extrabold text-center p-10 select-none md:px-20 lg:px-40"
           >
             <h1 className="text-3xl py-2 section-one-header md:text-5xl">
               Loc Nguyen
