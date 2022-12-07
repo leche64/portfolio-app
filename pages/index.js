@@ -405,12 +405,6 @@ export default function Home() {
               whileInView={{ opacity: 1 }}
               whileHover={{
                 scale: [1, 1.05],
-                filter: [
-                  "hue-rotate(0) contrast(100%)",
-                  "hue-rotate(360deg) contrast(200%)",
-                  "hue-rotate(45deg) contrast(300%)",
-                  "hue-rotate(0) contrast(100%)",
-                ],
                 transition: {
                   duration: 0.2,
                 },
@@ -440,12 +434,6 @@ export default function Home() {
               whileInView={{ opacity: 1 }}
               whileHover={{
                 scale: [1, 1.05],
-                filter: [
-                  "hue-rotate(0) contrast(100%)",
-                  "hue-rotate(360deg) contrast(200%)",
-                  "hue-rotate(45deg) contrast(300%)",
-                  "hue-rotate(0) contrast(100%)",
-                ],
                 transition: {
                   duration: 0.2,
                 },
@@ -475,12 +463,6 @@ export default function Home() {
               whileInView={{ opacity: 1 }}
               whileHover={{
                 scale: [1, 1.05],
-                filter: [
-                  "hue-rotate(0) contrast(100%)",
-                  "hue-rotate(360deg) contrast(200%)",
-                  "hue-rotate(45deg) contrast(300%)",
-                  "hue-rotate(0) contrast(100%)",
-                ],
                 transition: {
                   duration: 0.2,
                 },
@@ -509,12 +491,6 @@ export default function Home() {
               whileInView={{ opacity: 1 }}
               whileHover={{
                 scale: [1, 1.05],
-                filter: [
-                  "hue-rotate(0) contrast(100%)",
-                  "hue-rotate(360deg) contrast(200%)",
-                  "hue-rotate(45deg) contrast(300%)",
-                  "hue-rotate(0) contrast(100%)",
-                ],
                 transition: {
                   duration: 0.2,
                 },
