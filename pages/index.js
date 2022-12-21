@@ -323,7 +323,7 @@ export default function Home() {
               Hey! I&apos;m Loc, a full-stack software engineer with a love for
               code, data, and analytics. My passion for tech started young from
               building apps scraping web data, progressing to apps interacting
-              with the Ethereum blockchain and even award-winning data
+              with the Ethereum blockchain, and even award-winning data
               transformation pipelines.
               <br />
             </motion.p>
@@ -345,9 +345,8 @@ export default function Home() {
               , where for 6 years I lead, developed, and supported various
               applications as a hybrid software/data engineer. Selected into
               their Technology Development Program, I focused my time on
-              leveraging new technology to streamline legacy on-prem
+              leveraging open-source, cloud-based tech to streamline legacy on-prem
               applications.
-              <br />
               <br />
               <br />
               </motion.p>
@@ -355,8 +354,8 @@ export default function Home() {
               className="text-l py-2 section-one-header max-w-xl md:text-2xl"
               initial={{ opacity: 0.0 }}
               whileInView={{ opacity: 1 }}>
-              I&apos;ve since left that position and am currently exploring the
-              world of freelancing and web3. My inbox is open to any new
+              After a long successful tenure there, I&apos;ve since left that position. I'm currently exploring the
+              world of freelancing, web3, and building side projects. My inbox is always open to any new
               opportunities, questions, or if you just want to say hi.
             </motion.p>
           </div>
@@ -450,7 +449,7 @@ export default function Home() {
               </h3>
               <p className="py-2">
                 Web-based node application that allows geo-restricted orders
-                within a given area. Using various apis for backend services
+                within a given area. Using various APIs for backend services
                 (Google Maps, Twilio SMS Auth, Stripe Payments, etc). A fun
                 freelance project where I leveraged Figma and other tools to
                 complete the development cycle from design, prototype to code.
