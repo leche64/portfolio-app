@@ -354,7 +354,7 @@ export default function Home() {
               className="text-l py-2 section-one-header max-w-xl md:text-2xl"
               initial={{ opacity: 0.0 }}
               whileInView={{ opacity: 1 }}>
-              After a long successful tenure there, I&apos;ve since left that position. I'm currently exploring the
+              After a long successful tenure there, I&apos;ve since left that position. I&apos;m currently exploring the
               world of freelancing, web3, and building side projects. My inbox is always open to any new
               opportunities, questions, or if you just want to say hi.
             </motion.p>
