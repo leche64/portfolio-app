@@ -345,17 +345,18 @@ export default function Home() {
               , where for 6 years I lead, developed, and supported various
               applications as a hybrid software/data engineer. Selected into
               their Technology Development Program, I focused my time on
-              leveraging open-source, cloud-based tech to streamline legacy on-prem
-              applications.
+              leveraging open-source, cloud-based tech to streamline legacy
+              on-prem applications.
               <br />
               <br />
-              </motion.p>
+            </motion.p>
             <motion.p
               className="text-l py-2 section-one-header max-w-xl md:text-2xl"
               initial={{ opacity: 0.0 }}
-              whileInView={{ opacity: 1 }}>
-              I&apos;ve since left that position, and I&apos;m currently exploring the
-              world of freelancing, and web3. My inbox is always open to any new
+              whileInView={{ opacity: 1 }}
+            >
+              I&apos;ve since left that position and am currently exploring the
+              world of freelancing and web3. My inbox is always open to any new
               opportunities, questions, or if you just want to say hi.
             </motion.p>
           </div>
