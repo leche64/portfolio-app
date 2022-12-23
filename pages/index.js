@@ -40,7 +40,7 @@ export default function Home() {
   let interval;
 
   const startTimer = () => {
-    const countDownDate = new Date("Jan 1, 2023").getTime();
+    const countDownDate = new Date("Jan 22, 2023").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -243,7 +243,7 @@ export default function Home() {
               },
             },
           }}
-          className="snap-start text-neutral-200 p-8 flex justify-between select-none md:p-12 md:mb-0"
+          className="snap-start text-neutral-100 p-8 flex justify-between select-none md:p-12 md:mb-0"
         >
           <div className="text-l md:text-2xl">
             <Typewriter
@@ -303,7 +303,7 @@ export default function Home() {
         </div>
 
         {/* SectionOne START*/}
-        <div className="snap-start bg-indigo-700 text-neutral-200 justify-center p-10 section-one-header md:px-20 lg:px-30">
+        <div className="snap-start bg-indigo-700 text-neutral-100 justify-center p-10 section-one-header md:px-20 lg:px-30">
           <div>
             <motion.h2
               ref={aboutSectionRef}
@@ -364,7 +364,7 @@ export default function Home() {
         {/* SectionOne END*/}
 
         {/* SectionTwo START*/}
-        <div className="text-neutral-200 bg-neutral-800 justify-center p-10 section-one-header md:px-20 lg:px-30">
+        <div className="text-neutral-100 bg-neutral-800 justify-center p-10 section-one-header md:px-20 lg:px-30">
           <motion.h2
             ref={projectSectionRef}
             className="text-3xl mb-5 md:text-5xl flex gap-3"
