@@ -106,7 +106,6 @@ export default function Home() {
       </Head>
 
       <div className="appContainer">
-        
         <div className="navBarContainer">
           <div className="appNavBar fixed left-0 w-fit p-2 z-10">
             <div class="mx-auto h-[10rem] w-[1px] bg-neutral-100 mb-5"></div>
@@ -120,13 +119,17 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="appPageOne max-h-screen min-h-screen min-w-sm max-w-screen bg-[url('/img/abstract_tech_mobile.png')] sm:bg-[url('/img/abstract_tech_full.png')] bg-no-repeat bg-center relative">
-          <div className="homeHeader pt-[10rem] text-center text-neutral-100">
-            <h1 className="text-2xl font-semibold">Loc Nguyen</h1>
-            <p className="text-lg pt-2">
-              Full stack developer <br /> based out of NYC <br /> building apps
-              for the{" "}
-            </p>
+        <div className="appPageOne max-h-screen min-h-screen min-w-sm max-w-screen bg-[url('/img/abstract_tech_mobile.png')] sm:bg-[url('/img/abstract_tech_full.png')] bg-no-repeat bg-center bg-cover relative">
+          <div className="w-full sm:w-[30rem] sm:pl-[5rem]">
+            <div className="homeHeader pt-[10rem] text-center sm:text-left text-neutral-100">
+              <h1 className="text-2xl font-semibold sm:text-4xl sm:pt-10">
+                Loc Nguyen
+              </h1>
+              <p className="text-lg pt-2 sm:text-2xl">
+                Full stack developer <br className="sm:hidden" /> based out of
+                NYC <br /> building apps for the web
+              </p>
+            </div>
           </div>
           <div className="homeFooter w-full absolute bottom-0">
             <svg
@@ -155,18 +158,18 @@ export default function Home() {
           </div>
           <div className="aboutContainer text-neutral-100 p-2">
             <p>
-              Hey! I'm Loc, a full-stack software engineer in New York City with a love for code,
-              data, and analytics. My passion for tech started young from
-              building apps scraping web data, progressing to apps interacting
-              with the Ethereum blockchain and even award-winning data
-              transformation pipelines.
+              Hey! I'm Loc, a full-stack software engineer in New York City with
+              a love for code, data, and analytics. My passion for tech started
+              young from building apps scraping web data, progressing to apps
+              interacting with the Ethereum blockchain and even award-winning
+              data transformation pipelines.
             </p>
             <div className="py-4">
               <Image className="rounded-xl" src={computerAboutMe} />
             </div>
             <p>
-            A majority of my professional software development
-              experience comes from a large{" "}
+              A majority of my professional software development experience
+              comes from a large{" "}
               <a
                 className="italic underline underline-offset-2 hover:underline-offset-4"
                 href="https://www.capitalone.com/"
@@ -174,9 +177,9 @@ export default function Home() {
                 rel="noreferrer"
               >
                 financial services corporation
-              </a>, where for 6
-              years I lead, developed, and supported various applications as a
-              hybrid software/data engineer.
+              </a>
+              , where for 6 years I lead, developed, and supported various
+              applications as a hybrid software/data engineer.
             </p>
             <br />
             <p>
