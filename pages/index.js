@@ -114,6 +114,13 @@ export default function Home() {
               <motion.span
                 initial="hidden"
                 animate="visible"
+                whileHover={{
+                  scale: [1, 1.25],
+                  rotate: [0, 15, 5, -15, 0],
+                  transition: {
+                    duration: 0.2,
+                  },
+                }}
                 variants={{
                   hidden: {
                     opacity: 0,
@@ -131,6 +138,13 @@ export default function Home() {
               <motion.span
                 initial="hidden"
                 animate="visible"
+                whileHover={{
+                  scale: [1, 1.25],
+                  rotate: [0, 15, 5, -15, 0],
+                  transition: {
+                    duration: 0.2,
+                  },
+                }}
                 variants={{
                   hidden: {
                     opacity: 0,
@@ -148,6 +162,13 @@ export default function Home() {
               <motion.span
                 initial="hidden"
                 animate="visible"
+                whileHover={{
+                  scale: [1, 1.25],
+                  rotate: [0, 15, 5, -15, 0],
+                  transition: {
+                    duration: 0.2,
+                  },
+                }}
                 variants={{
                   hidden: {
                     opacity: 0,
@@ -165,6 +186,13 @@ export default function Home() {
               <motion.span
                 initial="hidden"
                 animate="visible"
+                whileHover={{
+                  scale: [1, 1.25],
+                  rotate: [0, 15, 5, -15, 0],
+                  transition: {
+                    duration: 0.2,
+                  },
+                }}
                 variants={{
                   hidden: {
                     opacity: 0,
