@@ -10,6 +10,7 @@ import computerLogo from "../public/img/computer.svg";
 import monitorLogo from "../public/img/monitor.svg";
 import gearsLogo from "../public/img/gears.svg";
 import dataGraphLogo from "../public/img/dataGraph.svg";
+import robotHeadLogo from "../public/img/robotHeadIcon.svg";
 
 import Typewriter from "typewriter-effect";
 
@@ -122,10 +123,10 @@ export default function Home() {
         <div className="appPageOne max-h-screen min-h-screen min-w-sm max-w-screen bg-[url('/img/abstract_tech_mobile.png')] sm:bg-[url('/img/abstract_tech_full.png')] bg-no-repeat bg-center bg-cover relative">
           <div className="w-full sm:w-[30rem] sm:pl-[5rem]">
             <div className="homeHeader pt-[10rem] text-center sm:text-left text-neutral-100">
-              <h1 className="text-2xl font-semibold sm:text-4xl sm:pt-10">
+              <span className="text-4xl font-semibold sm:text-4xl sm:pt-10">
                 Loc Nguyen
-              </h1>
-              <p className="text-lg pt-2 sm:text-2xl">
+              </span>
+              <p className="text-xl pt-2 sm:text-2xl">
                 Full stack developer <br className="sm:hidden" /> based out of
                 NYC <br /> building apps for the web
               </p>
@@ -149,11 +150,12 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Page Two Start */}
         <div className="appPageTwo h-fit bg-[#130D23] p-10 w-full">
           <div className="aboutContainer max-w-5xl mx-auto">
-            <div className="headerContainer flex gap-3 p-2 sm:p-5">
+            <div className="aboutHeaderContainer flex gap-3 p-2 sm:p-5">
               <Terminal />
-              <p className="text-2xl font-semibold text-neutral-100 mt-2">
+              <p className="text-3xl font-semibold text-neutral-100 mt-2">
                 About Me
               </p>
             </div>
@@ -179,7 +181,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="sm:col-span-2 pt-2">
-                <p className="text-lg  sm:text-xl">
+                <p className="text-lg sm:text-xl">
                   A majority of my professional software development experience
                   comes from a large{" "}
                   <a
@@ -199,12 +201,199 @@ export default function Home() {
                   my time on leveraging open-sourced, cloud-based tech to
                   streamline legacy on-prem applications.
                 </p>
-                <Image className="mx-auto py-2 sm:hidden max-h-[15rem]" src={owlCoding} />
+                <Image
+                  className="mx-auto py-2 sm:hidden max-h-[15rem]"
+                  src={owlCoding}
+                />
                 <p className="text-lg sm:text-xl sm:pt-5 max-w-lg">
                   I've since left that position and am currently exploring the
                   world of freelancing and web3. My inbox is always open to any
                   new opportunities, questions, or if you just want to say hi.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Page Three Start */}
+        <div className="appPageThree h-fit bg-[#1F2A49] p-10 w-full text-white">
+          <div className="projectsContainer max-w-5xl mx-auto">
+            <div className="projectHeaderContainer flex gap-3 p-2 sm:p-5">
+              <CodeBracket />
+              <p className="text-3xl font-semibold text-neutral-100 mt-2">
+                Projects
+              </p>
+            </div>
+            <div className="p-2">
+              <p className="text-lg sm:text-xl text-neutral-100 py-2 section-one-header max-w-xl md:text-2xl">
+                Below are a few favorite projects I&apos;ve worked on in the
+                past, both from my professional and personal collections. A mix
+                of complexity, touching various languages{" "}
+                <span className="italic underline underline-offset-2">
+                  (Python, Java, Scala){" "}
+                </span>
+                and frameworks/tech{" "}
+                <span className="italic underline underline-offset-2">
+                  {" "}
+                  (Node, React, Flask, Spark, Hadoop, AWS, Docker)
+                </span>
+              </p>
+
+              <div className="sm:grid grid-cols-2 gap-5">
+                {/* card 1 */}
+                <motion.div
+                  className="text-center shadow-lg p-10 rounded-xl min-w-fit sm:col-span-2"
+                  initial={{ opacity: 0.0 }}
+                  whileInView={{ opacity: 1 }}
+                  whileHover={{
+                    position: "relative",
+                    zIndex: 1,
+                    scale: [1, 1.08],
+                    transition: {
+                      duration: 0.2,
+                    },
+                  }}
+                >
+                  <Image
+                    className="mx-auto select-none"
+                    src={robotHeadLogo}
+                    width={25}
+                    height={25}
+                  />
+                  <p className="text-lg sm:text-2xl font-bold pt-5 pb-2">Atlas</p>
+                  <p className="py-2 sm:text-xl">
+                    A smart AI assistant built to answer any questions at
+                    anytime, powered by similar models used for <span className="italic font-semibold">ChatGBT</span>. A side
+                    project where I've used React, Node, and various APIs to
+                    build a service that's similar to ChatGBT but has a more
+                    unique, refined model for custom responses. A fun project
+                    that has led me down the rabbit hole of AI.
+                  </p>
+                </motion.div>
+
+                {/* card 1 */}
+                <motion.div
+                  className="text-center shadow-lg p-10 rounded-xl min-w-fit"
+                  initial={{ opacity: 0.0 }}
+                  whileInView={{ opacity: 1 }}
+                  whileHover={{
+                    position: "relative",
+                    zIndex: 1,
+                    scale: [1, 1.08],
+                    transition: {
+                      duration: 0.2,
+                    },
+                  }}
+                >
+                  <Image
+                    className="mx-auto select-none"
+                    src={dataLogo}
+                    width={25}
+                    height={25}
+                  />
+                  <p className="text-lg sm:text-2xl font-bold pt-5 pb-2">Datakata</p>
+                  <p className="sm:text-xl py-2">
+                    A complex data transformation pipeline containing various
+                    microservices to extract, transform and load large
+                    quantities of data. A challenging and rewarding project from
+                    my professional career that helped significantly reduce cost
+                    and time, replacing a deeply rooted legacy data application,
+                    awarded &quot;TechXellence&quot;.
+                  </p>
+                </motion.div>
+
+                {/* card 2 */}
+                <motion.div
+                  className="text-center shadow-lg p-10 rounded-xl min-w-fit"
+                  initial={{ opacity: 0.0 }}
+                  whileInView={{ opacity: 1 }}
+                  whileHover={{
+                    position: "relative",
+                    zIndex: 1,
+                    scale: [1, 1.08],
+                    transition: {
+                      duration: 0.2,
+                    },
+                  }}
+                >
+                  <Image
+                    className="mx-auto select-none"
+                    src={deliveryLogo}
+                    width={25}
+                    height={25}
+                  />
+                  <p className="text-lg sm:text-2xl font-bold pt-5 pb-2">
+                    Omnia Delivery App
+                  </p>
+                  <p className="sm:text-xl py-2">
+                    Web-based node application that allows geo-restricted orders
+                    within a given area. Using various apis for backend services
+                    (Google Maps, Twilio SMS Auth, Stripe Payments, etc). A
+                    freelance project where I leveraged Figma and other tools to
+                    complete the development cycle from design, prototype to
+                    code.
+                  </p>
+                </motion.div>
+                {/* card 3 */}
+                <motion.div
+                  className="text-center shadow-lg p-10 rounded-xl min-w-fit"
+                  initial={{ opacity: 0.0 }}
+                  whileInView={{ opacity: 1 }}
+                  whileHover={{
+                    position: "relative",
+                    zIndex: 1,
+                    scale: [1, 1.08],
+                    transition: {
+                      duration: 0.2,
+                    },
+                  }}
+                >
+                  <Image
+                    className="mx-auto select-none"
+                    src={ethLogo}
+                    width={25}
+                    height={25}
+                  />
+                  <p className="text-lg sm:text-2xl font-bold pt-5 pb-2">
+                    Ethereum Wallet App
+                  </p>
+                  <p className="sm:text-xl py-2">
+                    Python script that interacts with the Ethereum blockchain
+                    via an Infura node to retrieve ETH to USD holdings given a
+                    valid Ethereum address. Nothing complex, just something as I
+                    dip my toes into web3.
+                  </p>
+                </motion.div>
+                {/* card 4 */}
+                <motion.div
+                  className="text-center shadow-lg p-10 rounded-xl min-w-fit"
+                  initial={{ opacity: 0.0 }}
+                  whileInView={{ opacity: 1 }}
+                  whileHover={{
+                    position: "relative",
+                    zIndex: 1,
+                    scale: [1, 1.08],
+                    transition: {
+                      duration: 0.2,
+                    },
+                  }}
+                >
+                  <Image
+                    className="mx-auto select-none"
+                    src={computerLogo}
+                    width={25}
+                    height={25}
+                  />
+                  <p className="text-lg sm:text-2xl font-bold pt-5 pb-2">[REDACTED]</p>
+                  <p className="sm:text-xl py-2">Could be something. Probably nothing.</p>
+                  {/* Pass props to components */}
+                  <Clock
+                    timerDays={timerDays}
+                    timerHours={timerHours}
+                    timerMinutes={timerMinutes}
+                    timerSeconds={timerSeconds}
+                  />
+                </motion.div>
               </div>
             </div>
           </div>
