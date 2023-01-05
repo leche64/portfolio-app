@@ -293,7 +293,7 @@ export default function Home() {
               </div>
               <div className="sm:col-span-2">
                 <Image
-                  className="rounded-xl max-w-sm mx-auto pt-5"
+                  className="rounded-2xl max-w-sm mx-auto pt-5"
                   src={computerAboutMe}
                 />
               </div>
@@ -303,7 +303,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="sm:col-span-2 pt-2">
-                <p className="text-lg sm:text-xl">
+                <p className="text-lg sm:text-xl md:pt-[5rem]">
                   A majority of my professional software development experience
                   comes from a large{" "}
                   <a
