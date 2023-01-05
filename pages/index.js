@@ -18,7 +18,7 @@ import Terminal from "./Terminal";
 import CodeBracket from "./CodeBracket";
 import Clock from "./Clock";
 
-import computerAboutMe from "../public/img/compOverlooking.png";
+import computerAboutMe from "../public/img/compOverlooking.svg";
 import owlCoding from "../public/img/owlCoding.svg";
 
 import { Analytics } from "@vercel/analytics/react";
@@ -149,52 +149,64 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="appPageTwo min-h-screen h-fit bg-[#130D23] p-10">
-          <div className="headerContainer flex gap-3 p-2">
-            <Terminal />
-            <p className="text-2xl font-semibold text-neutral-100 mt-2">
-              About Me
-            </p>
-          </div>
-          <div className="aboutContainer text-neutral-100 p-2">
-            <p>
-              Hey! I'm Loc, a full-stack software engineer in New York City with
-              a love for code, data, and analytics. My passion for tech started
-              young from building apps scraping web data, progressing to apps
-              interacting with the Ethereum blockchain and even award-winning
-              data transformation pipelines.
-            </p>
-            <div className="py-4">
-              <Image className="rounded-xl" src={computerAboutMe} />
+        <div className="appPageTwo h-fit bg-[#130D23] p-10 w-full">
+          <div className="aboutContainer max-w-5xl mx-auto">
+            <div className="headerContainer flex gap-3 p-2 sm:p-5">
+              <Terminal />
+              <p className="text-2xl font-semibold text-neutral-100 mt-2">
+                About Me
+              </p>
             </div>
-            <p>
-              A majority of my professional software development experience
-              comes from a large{" "}
-              <a
-                className="italic underline underline-offset-2 hover:underline-offset-4"
-                href="https://www.capitalone.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                financial services corporation
-              </a>
-              , where for 6 years I lead, developed, and supported various
-              applications as a hybrid software/data engineer.
-            </p>
-            <br />
-            <p>
-              Selected into their Technology Development Program, I focused my
-              time on leveraging open-sourced, cloud-based tech to streamline
-              legacy on-prem applications.
-            </p>
-            <div className="py-4">
-              <Image className="mx-auto" src={owlCoding} />
+            <div className="aboutContainer text-neutral-100 p-2 sm:p-5 grid sm:grid-cols-4">
+              <div className="sm:col-span-2">
+                <p className="text-lg sm:text-xl sm:max-w-lg sm:pt-2">
+                  Hey! I'm Loc, a full-stack software engineer in New York City
+                  with a love for code, data, and analytics. My passion for tech
+                  started young from building apps scraping web data,
+                  progressing to apps interacting with the Ethereum blockchain
+                  and even award-winning data transformation pipelines.
+                </p>
+              </div>
+              <div className="sm:col-span-2">
+                <Image
+                  className="rounded-xl max-w-sm mx-auto pt-5"
+                  src={computerAboutMe}
+                />
+              </div>
+              <div className="sm:col-span-2">
+                <div className="py-4">
+                  <Image className="mx-auto hidden sm:inline" src={owlCoding} />
+                </div>
+              </div>
+              <div className="sm:col-span-2 pt-2">
+                <p className="text-lg  sm:text-xl">
+                  A majority of my professional software development experience
+                  comes from a large{" "}
+                  <a
+                    className="italic underline underline-offset-2 hover:underline-offset-4"
+                    href="https://www.capitalone.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    financial services corporation
+                  </a>
+                  , where for 6 years I lead, developed, and supported various
+                  applications as a hybrid software/data engineer.
+                </p>
+                <br />
+                <p className="text-lg sm:text-xl">
+                  Selected into their Technology Development Program, I focused
+                  my time on leveraging open-sourced, cloud-based tech to
+                  streamline legacy on-prem applications.
+                </p>
+                <Image className="mx-auto py-2 sm:hidden max-h-[15rem]" src={owlCoding} />
+                <p className="text-lg sm:text-xl sm:pt-5 max-w-lg">
+                  I've since left that position and am currently exploring the
+                  world of freelancing and web3. My inbox is always open to any
+                  new opportunities, questions, or if you just want to say hi.
+                </p>
+              </div>
             </div>
-            <p>
-              I've since left that position and am currently exploring the world
-              of freelancing and web3. My inbox is always open to any new
-              opportunities, questions, or if you just want to say hi.
-            </p>
           </div>
         </div>
       </div>
