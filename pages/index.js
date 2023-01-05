@@ -111,10 +111,74 @@ export default function Home() {
           <div className="appNavBar fixed left-0 w-fit p-2 z-10">
             <div class="mx-auto h-[10rem] w-[1px] bg-neutral-100 mb-5"></div>
             <div className="navBarIcons text-xl text-neutral-300 flex flex-col space-y-4">
-              <FiLinkedin className="cursor-pointer hover:text-green-200" />
-              <FiGithub className="cursor-pointer hover:text-green-200" />
-              <FiTwitter className="cursor-pointer hover:text-green-200" />
-              <FiMail className="cursor-pointer hover:text-green-200" />
+              <motion.span
+                initial="hidden"
+                animate="visible"
+                variants={{
+                  hidden: {
+                    opacity: 0,
+                  },
+                  visible: {
+                    opacity: 1,
+                    transition: {
+                      delay: 0.5,
+                    },
+                  },
+                }}
+              >
+                <FiLinkedin className="cursor-pointer hover:text-green-200" />
+              </motion.span>
+              <motion.span
+                initial="hidden"
+                animate="visible"
+                variants={{
+                  hidden: {
+                    opacity: 0,
+                  },
+                  visible: {
+                    opacity: 1,
+                    transition: {
+                      delay: 1.0,
+                    },
+                  },
+                }}
+              >
+                <FiGithub className="cursor-pointer hover:text-green-200" />
+              </motion.span>
+              <motion.span
+                initial="hidden"
+                animate="visible"
+                variants={{
+                  hidden: {
+                    opacity: 0,
+                  },
+                  visible: {
+                    opacity: 1,
+                    transition: {
+                      delay: 1.2,
+                    },
+                  },
+                }}
+              >
+                <FiTwitter className="cursor-pointer hover:text-green-200" />
+              </motion.span>
+              <motion.span
+                initial="hidden"
+                animate="visible"
+                variants={{
+                  hidden: {
+                    opacity: 0,
+                  },
+                  visible: {
+                    opacity: 1,
+                    transition: {
+                      delay: 1.5,
+                    },
+                  },
+                }}
+              >
+                <FiMail className="cursor-pointer hover:text-green-200" />
+              </motion.span>
             </div>
             <div class="mx-auto h-[10rem] w-[1px] bg-neutral-100 mt-5"></div>
           </div>
@@ -123,13 +187,45 @@ export default function Home() {
         <div className="appPageOne max-h-screen min-h-screen min-w-sm max-w-screen bg-[url('/img/abstract_tech_mobile.png')] sm:bg-[url('/img/abstract_tech_full.png')] bg-no-repeat bg-center bg-cover relative">
           <div className="w-full sm:w-[30rem] sm:pl-[5rem]">
             <div className="homeHeader pt-[10rem] text-center sm:text-left text-neutral-100">
-              <span className="text-4xl font-semibold sm:text-4xl sm:pt-10">
+              <motion.span
+                initial="hidden"
+                animate="visible"
+                variants={{
+                  hidden: {
+                    opacity: 0,
+                  },
+                  visible: {
+                    scale: 1,
+                    opacity: 1,
+                    transition: {
+                      delay: 0.15,
+                    },
+                  },
+                }}
+                className="text-4xl font-semibold sm:text-4xl sm:pt-10"
+              >
                 Loc Nguyen
-              </span>
-              <p className="text-xl pt-2 sm:text-2xl">
+              </motion.span>
+              <motion.p
+                initial="hidden"
+                animate="visible"
+                variants={{
+                  hidden: {
+                    opacity: 0,
+                  },
+                  visible: {
+                    scale: 1,
+                    opacity: 1,
+                    transition: {
+                      delay: 0.25,
+                    },
+                  },
+                }}
+                className="text-xl pt-2 sm:text-2xl"
+              >
                 Full stack developer <br className="sm:hidden" /> based out of
                 NYC <br /> building apps for the web
-              </p>
+              </motion.p>
             </div>
           </div>
           <div className="homeFooter w-full absolute bottom-0">
@@ -139,7 +235,7 @@ export default function Home() {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="white"
-              className="w-8 h-8 mx-auto mb-10"
+              className="w-8 h-8 mx-auto mb-10 animate-bounce"
             >
               <path
                 strokeLinecap="round"
@@ -260,14 +356,18 @@ export default function Home() {
                     width={25}
                     height={25}
                   />
-                  <p className="text-lg sm:text-2xl font-bold pt-5 pb-2">Atlas</p>
+                  <p className="text-lg sm:text-2xl font-bold pt-5 pb-2">
+                    Atlas
+                  </p>
                   <p className="py-2 sm:text-xl">
                     A smart AI assistant built to answer any questions at
-                    anytime, powered by similar models used for <span className="italic font-semibold">ChatGBT</span>. A side
-                    project where I've used React, Node, and various APIs to
-                    build a service that's similar to ChatGBT but has a more
-                    unique, refined model for custom responses. A fun project
-                    that has led me down the rabbit hole of AI.
+                    anytime, powered by similar models used for{" "}
+                    <span className="italic font-semibold">ChatGBT</span>. A
+                    side project where I've used React, Node, and various APIs
+                    to build a service that's similar to{" "}
+                    <span className="italic font-semibold">ChatGBT</span> but
+                    has a more unique, refined model for custom responses. A fun
+                    project that has led me down the rabbit hole of AI.
                   </p>
                 </motion.div>
 
@@ -291,7 +391,9 @@ export default function Home() {
                     width={25}
                     height={25}
                   />
-                  <p className="text-lg sm:text-2xl font-bold pt-5 pb-2">Datakata</p>
+                  <p className="text-lg sm:text-2xl font-bold pt-5 pb-2">
+                    Datakata
+                  </p>
                   <p className="sm:text-xl py-2">
                     A complex data transformation pipeline containing various
                     microservices to extract, transform and load large
@@ -384,8 +486,12 @@ export default function Home() {
                     width={25}
                     height={25}
                   />
-                  <p className="text-lg sm:text-2xl font-bold pt-5 pb-2">[REDACTED]</p>
-                  <p className="sm:text-xl py-2">Could be something. Probably nothing.</p>
+                  <p className="text-lg sm:text-2xl font-bold pt-5 pb-2">
+                    [REDACTED]
+                  </p>
+                  <p className="sm:text-xl py-2">
+                    Could be something. Probably nothing.
+                  </p>
                   {/* Pass props to components */}
                   <Clock
                     timerDays={timerDays}
@@ -395,6 +501,11 @@ export default function Home() {
                   />
                 </motion.div>
               </div>
+              <footer className="text-xs text-center mt-10 select-none">
+                <h1>Made with Love by Loc</h1>
+                <h1>Made with Love by Loc</h1>
+                <h1>Made with Love by Loc</h1>
+              </footer>
             </div>
           </div>
         </div>
