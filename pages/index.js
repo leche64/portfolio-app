@@ -7,9 +7,6 @@ import ethLogo from "../public/img/eth.svg";
 import deliveryLogo from "../public/img/delivery.svg";
 import dataLogo from "../public/img/data.svg";
 import computerLogo from "../public/img/computer.svg";
-import monitorLogo from "../public/img/monitor.svg";
-import gearsLogo from "../public/img/gears.svg";
-import dataGraphLogo from "../public/img/dataGraph.svg";
 import robotHeadLogo from "../public/img/robotHeadIcon.svg";
 
 import Typewriter from "typewriter-effect";
@@ -212,6 +209,7 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Page One Start */}
         <div className="appPageOne max-h-screen min-h-screen min-w-sm max-w-screen bg-[url('/img/abstract_tech_mobile.png')] sm:bg-[url('/img/abstract_tech_full.png')] bg-no-repeat bg-center bg-cover relative">
           <div className="w-full sm:w-[30rem] sm:pl-[5rem]">
             <div className="homeHeader pt-[10rem] text-center sm:text-left text-neutral-100">
@@ -300,7 +298,7 @@ export default function Home() {
                 />
               </div>
               <div className="sm:col-span-2">
-                <div className="py-4">
+                <div className="py-4 sm:py-[5rem]">
                   <Image className="mx-auto hidden sm:inline" src={owlCoding} />
                 </div>
               </div>
@@ -340,7 +338,7 @@ export default function Home() {
         </div>
 
         {/* Page Three Start */}
-        <div className="appPageThree h-fit bg-[#1F2A49] p-10 w-full text-white">
+        <div className="appPageThree h-fit bg-[#1F2A49] p-10 w-full text-white appProjectsBackgroundImgFull">
           <div className="projectsContainer max-w-5xl mx-auto">
             <div className="projectHeaderContainer flex gap-3 p-2 sm:p-5">
               <CodeBracket />
@@ -349,7 +347,7 @@ export default function Home() {
               </p>
             </div>
             <div className="p-2">
-              <p className="text-lg sm:text-xl text-neutral-100 py-2 section-one-header max-w-xl md:text-2xl">
+              <p className="text-lg sm:text-xl text-neutral-100 py-2 section-one-header max-w-xl">
                 Below are a few favorite projects I&apos;ve worked on in the
                 past, both from my professional and personal collections. A mix
                 of complexity, touching various languages{" "}
@@ -392,10 +390,9 @@ export default function Home() {
                     anytime, powered by similar models used for{" "}
                     <span className="italic font-semibold">ChatGBT</span>. A
                     side project where I've used React, Node, and various APIs
-                    to build a service that's similar to{" "}
-                    <span className="italic font-semibold">ChatGBT</span> but
-                    has a more unique, refined model for custom responses. A fun
-                    project that has led me down the rabbit hole of AI.
+                    to build a service that's similar to ChatGBT but has a more
+                    unique, refined model for custom responses. A fun project
+                    that has led me down the rabbit hole of AI.
                   </p>
                 </motion.div>
 
@@ -453,7 +450,7 @@ export default function Home() {
                     height={25}
                   />
                   <p className="text-lg sm:text-2xl font-bold pt-5 pb-2">
-                    Omnia Delivery App
+                    Omnia Delivery
                   </p>
                   <p className="sm:text-xl py-2">
                     Web-based node application that allows geo-restricted orders
@@ -485,7 +482,7 @@ export default function Home() {
                     height={25}
                   />
                   <p className="text-lg sm:text-2xl font-bold pt-5 pb-2">
-                    Ethereum Wallet App
+                    Ethereum Wallet Balance
                   </p>
                   <p className="sm:text-xl py-2">
                     Python script that interacts with the Ethereum blockchain
