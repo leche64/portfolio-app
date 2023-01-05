@@ -338,7 +338,7 @@ export default function Home() {
         </div>
 
         {/* Page Three Start */}
-        <div className="appPageThree h-fit bg-[#1F2A49] p-10 w-full text-white appProjectsBackgroundImgFull">
+        <div className="appPageThree h-fit bg-[#1F2A49] p-10 w-full text-white bg-[url('/img/abstractComputerGradientMobile.png')] sm:bg-[url('/img/abstractComputerGradientFull.png')] bg-no-repeat bg-center bg-cover">
           <div className="projectsContainer max-w-5xl mx-auto">
             <div className="projectHeaderContainer flex gap-3 p-2 sm:p-5">
               <CodeBracket />
