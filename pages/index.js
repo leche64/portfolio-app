@@ -321,7 +321,7 @@ export default function Home() {
               </div>
               <div className="sm:col-span-2">
                 <Image
-                  className="rounded-2xl max-w-sm mx-auto pt-5"
+                  className="rounded-2xl mx-auto pt-5"
                   src={computerAboutMe}
                 />
               </div>
