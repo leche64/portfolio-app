@@ -16,7 +16,7 @@ import Terminal from "./Terminal";
 import CodeBracket from "./CodeBracket";
 import Clock from "./Clock";
 
-import computerAboutMe from "../public/img/compOverlooking.svg";
+import computerAboutMe from "../public/img/compOverlooking.png";
 import owlCoding from "../public/img/owlCoding.svg";
 
 import { Analytics } from "@vercel/analytics/react";
