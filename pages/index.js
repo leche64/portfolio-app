@@ -23,6 +23,10 @@ import { Analytics } from "@vercel/analytics/react";
 
 import { FiTwitter, FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 
+import { AiOutlinePicture, AiOutlineLinkedin } from "react-icons/ai";
+
+import { TbBrandLinkedin } from "react-icons/tb";
+
 import { useInView } from "react-intersection-observer";
 
 import { useRef, useEffect, useState } from "react";
@@ -130,7 +134,13 @@ export default function Home() {
                   },
                 }}
               >
-                <FiLinkedin className="cursor-pointer hover:text-green-200" />
+                <a
+                  href="https://www.linkedin.com/in/loc-nguyen-nyc"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <AiOutlineLinkedin className="cursor-pointer hover:text-green-200" />
+                </a>
               </motion.span>
               <motion.span
                 initial="hidden"
@@ -154,7 +164,13 @@ export default function Home() {
                   },
                 }}
               >
-                <FiGithub className="cursor-pointer hover:text-green-200" />
+                <a
+                  href="https://github.com/leche64"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FiGithub className="cursor-pointer hover:text-green-200" />
+                </a>
               </motion.span>
               <motion.span
                 initial="hidden"
@@ -178,7 +194,13 @@ export default function Home() {
                   },
                 }}
               >
-                <FiTwitter className="cursor-pointer hover:text-green-200" />
+                <a
+                  href="mailto:locnguyenva1@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FiMail className="cursor-pointer hover:text-green-200" />
+                </a>
               </motion.span>
               <motion.span
                 initial="hidden"
@@ -202,7 +224,13 @@ export default function Home() {
                   },
                 }}
               >
-                <FiMail className="cursor-pointer hover:text-green-200" />
+                <a
+                  href="https://www.midjourney.com/app/users/785721412597579816/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <AiOutlinePicture className="cursor-pointer hover:text-green-200" />
+                </a>
               </motion.span>
             </div>
             <div class="mx-auto h-[10rem] w-[1px] bg-neutral-100 mt-5"></div>
