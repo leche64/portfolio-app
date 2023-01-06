@@ -2,12 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.customCard {
+  backdrop-filter: blur(1rem);
+  /* margin top 5rem */
+  margin-top: 1rem;
+}
+
 .appProjectsBackgroundImgFull {
-  background-image: linear-gradient(
-      to bottom,
-      #130D23,
-      rgba(20, 22, 20, 0.73)
-    ),
+  background-image: linear-gradient(to bottom, #130d23, rgba(20, 22, 20, 0.73)),
     url("/img/computerAbstractMobile.png");
   background-repeat: no-repeat;
   /* set background image to center and fit to screen */
@@ -16,11 +18,7 @@
 }
 
 .appProjectsBackgroundImgMobile {
-  background-image: linear-gradient(
-      to bottom,
-      #130D23,
-      rgba(20, 22, 20, 0.73)
-    ),
+  background-image: linear-gradient(to bottom, #130d23, rgba(20, 22, 20, 0.73)),
     url("/img/computerAbstractMobile.png");
   background-repeat: no-repeat;
   /* set background image to center and fit to screen */
@@ -29,11 +27,7 @@
 }
 
 .appProjectsBackgroundImgMobile {
-  background-image: linear-gradient(
-      to bottom,
-      #130D23,
-      rgba(20, 22, 20, 0.73)
-    ),
+  background-image: linear-gradient(to bottom, #130d23, rgba(20, 22, 20, 0.73)),
     url("/img/computerAbstract.png");
   background-repeat: no-repeat;
   /* set background image to center and fit to screen */

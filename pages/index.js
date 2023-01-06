@@ -338,7 +338,7 @@ export default function Home() {
         </div>
 
         {/* Page Three Start */}
-        <div className="appPageThree h-fit bg-[#1F2A49] p-10 w-full text-white bg-[url('/img/abstractComputerGradientMobile.png')] sm:bg-[url('/img/abstractComputerGradientFull.png')] bg-no-repeat bg-center bg-cover">
+        <div className="appPageThree h-fit bg-[#1F2A49] p-10 w-full text-white bg-[url('/img/dataFlowMobile.svg')] sm:bg-[url('/img/dataFlowFull.svg')] bg-no-repeat bg-center bg-cover">
           <div className="projectsContainer max-w-5xl mx-auto">
             <div className="projectHeaderContainer flex gap-3 p-2 sm:p-5">
               <CodeBracket />
@@ -364,13 +364,12 @@ export default function Home() {
               <div className="sm:grid grid-cols-2 gap-5">
                 {/* card 1 */}
                 <motion.div
-                  className="text-center shadow-lg p-10 rounded-xl min-w-fit sm:col-span-2"
+                  className="customCard text-center shadow-lg p-10 rounded-xl min-w-fit sm:col-span-2"
                   initial={{ opacity: 0.0 }}
                   whileInView={{ opacity: 1 }}
                   whileHover={{
                     position: "relative",
-                    zIndex: 1,
-                    scale: [1, 1.08],
+                    scale: [1, 1.05],
                     transition: {
                       duration: 0.2,
                     },
@@ -398,13 +397,12 @@ export default function Home() {
 
                 {/* card 1 */}
                 <motion.div
-                  className="text-center shadow-lg p-10 rounded-xl min-w-fit"
+                  className="customCard text-center shadow-lg p-10 rounded-xl min-w-fit"
                   initial={{ opacity: 0.0 }}
                   whileInView={{ opacity: 1 }}
                   whileHover={{
                     position: "relative",
-                    zIndex: 1,
-                    scale: [1, 1.08],
+                    scale: [1, 1.05],
                     transition: {
                       duration: 0.2,
                     },
@@ -431,13 +429,12 @@ export default function Home() {
 
                 {/* card 2 */}
                 <motion.div
-                  className="text-center shadow-lg p-10 rounded-xl min-w-fit"
+                  className="customCard text-center shadow-lg p-10 rounded-xl min-w-fit"
                   initial={{ opacity: 0.0 }}
                   whileInView={{ opacity: 1 }}
                   whileHover={{
                     position: "relative",
-                    zIndex: 1,
-                    scale: [1, 1.08],
+                    scale: [1, 1.05],
                     transition: {
                       duration: 0.2,
                     },
@@ -463,13 +460,12 @@ export default function Home() {
                 </motion.div>
                 {/* card 3 */}
                 <motion.div
-                  className="text-center shadow-lg p-10 rounded-xl min-w-fit"
+                  className="customCard text-center shadow-lg p-10 rounded-xl min-w-fit"
                   initial={{ opacity: 0.0 }}
                   whileInView={{ opacity: 1 }}
                   whileHover={{
                     position: "relative",
-                    zIndex: 1,
-                    scale: [1, 1.08],
+                    scale: [1, 1.05],
                     transition: {
                       duration: 0.2,
                     },
@@ -493,13 +489,12 @@ export default function Home() {
                 </motion.div>
                 {/* card 4 */}
                 <motion.div
-                  className="text-center shadow-lg p-10 rounded-xl min-w-fit"
+                  className="customCard text-center shadow-lg p-10 rounded-xl min-w-fit"
                   initial={{ opacity: 0.0 }}
                   whileInView={{ opacity: 1 }}
                   whileHover={{
                     position: "relative",
-                    zIndex: 1,
-                    scale: [1, 1.08],
+                    scale: [1, 1.05],
                     transition: {
                       duration: 0.2,
                     },
