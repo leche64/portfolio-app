@@ -2,12 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Source Code Pro", monospace;
-  background-color: black;
+.customCard {
+  backdrop-filter: blur(1rem);
+  margin-top: 1rem;
+}
+
+.appProjectsBackgroundImgFull {
+  background-image: linear-gradient(to bottom, #130d23, rgba(20, 22, 20, 0.73)),
+    url("/img/computerAbstractMobile.png");
+  background-repeat: no-repeat;
+  /* set background image to center and fit to screen */
+  background-position: center;
+  background-size: cover;
+}
+
+.appProjectsBackgroundImgMobile {
+  background-image: linear-gradient(to bottom, #130d23, rgba(20, 22, 20, 0.73)),
+    url("/img/computerAbstractMobile.png");
+  background-repeat: no-repeat;
+  /* set background image to center and fit to screen */
+  background-position: center;
+  background-size: cover;
+}
+
+.appProjectsBackgroundImgMobile {
+  background-image: linear-gradient(to bottom, #130d23, rgba(20, 22, 20, 0.73)),
+    url("/img/computerAbstract.png");
+  background-repeat: no-repeat;
+  /* set background image to center and fit to screen */
+  background-position: center;
+  background-size: cover;
 }
 
 h2::selection {
@@ -33,6 +57,10 @@ span::selection {
 a::selection {
   background: rgb(12, 177, 81);
   color: white;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
 }
 
 p {
@@ -235,20 +263,19 @@ h1:nth-child(3) {
 }
 
 @keyframes animate-rocket {
-  0%{
+  0% {
     transfrom: scale(1) rotate(10deg);
   }
-  25%{
+  25% {
     transfrom: scale(1.25) rotate(15deg);
   }
-  50%{
+  50% {
     transfrom: scale(1.5) rotate(5deg);
   }
-  75%{
+  75% {
     transfrom: scale(1.75) rotate(-10deg);
   }
-  100%{
+  100% {
     transfrom: scale(2) rotate(0);
   }
 }
-
