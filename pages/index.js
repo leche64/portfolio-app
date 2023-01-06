@@ -312,7 +312,7 @@ export default function Home() {
             <div className="aboutContainer text-neutral-100 p-2 sm:p-5 grid sm:grid-cols-4">
               <div className="sm:col-span-2">
                 <p className="text-lg sm:text-xl sm:max-w-lg sm:pt-2">
-                  Hey! I'm Loc, a full-stack software engineer in New York City
+                  Hey! I&apos;m Loc, a full-stack software engineer in New York City
                   with a love for code, data, and analytics. My passion for tech
                   started young from building apps scraping web data,
                   progressing to apps interacting with the Ethereum blockchain
@@ -356,7 +356,7 @@ export default function Home() {
                   src={owlCoding}
                 />
                 <p className="text-lg sm:text-xl sm:pt-5 max-w-lg">
-                  I've since left that position and am currently exploring the
+                  I&apos;ve since left that position and am currently exploring the
                   world of freelancing and web3. My inbox is always open to any
                   new opportunities, questions, or if you just want to say hi.
                 </p>
@@ -416,8 +416,8 @@ export default function Home() {
                     A smart AI assistant built to answer any questions at
                     anytime, powered by similar models used for{" "}
                     <span className="italic font-semibold">ChatGBT</span>. A
-                    side project where I've used React, Node, and various APIs
-                    to build a service that's similar to ChatGBT but has a more
+                    side project where I&apos;ve used React, Node, and various APIs
+                    to build a service that&apos;s similar to ChatGBT but has a more
                     unique, refined model for custom responses. A fun project
                     that has led me down the rabbit hole of AI.
                   </p>
