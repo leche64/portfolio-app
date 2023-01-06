@@ -107,10 +107,10 @@ export default function Home() {
         />
       </Head>
 
-      <div className="appContainer">
+      <div className="appContainer min-w-screen">
         <div className="navBarContainer">
           <div className="appNavBar fixed left-0 w-fit p-2 z-10">
-            <div class="mx-auto h-[10rem] w-[1px] bg-neutral-100 mb-5"></div>
+            <div className="mx-auto h-[10rem] w-[1px] bg-neutral-100 mb-5"></div>
             <div className="navBarIcons text-xl text-neutral-300 flex flex-col space-y-4">
               <motion.span
                 initial="hidden"
