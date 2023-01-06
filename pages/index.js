@@ -107,7 +107,7 @@ export default function Home() {
         />
       </Head>
 
-      <div className="appContainer min-w-screen">
+      <div className="appContainer">
         <div className="navBarContainer">
           <div className="appNavBar fixed left-0 w-fit p-2 z-10">
             <div className="mx-auto h-[10rem] w-[1px] bg-neutral-100 mb-5"></div>
@@ -238,7 +238,7 @@ export default function Home() {
         </div>
 
         {/* Page One Start */}
-        <div className="appPageOne max-h-screen min-h-screen min-w-sm max-w-screen bg-[url('/img/abstract_tech_mobile.png')] sm:bg-[url('/img/abstract_tech_full.png')] bg-no-repeat bg-center bg-cover relative">
+        <div className="appPageOne max-h-screen min-h-screen min-w-screen max-w-screen bg-[url('/img/abstract_tech_mobile.png')] sm:bg-[url('/img/abstract_tech_full.png')] bg-no-repeat bg-center bg-cover relative">
           <div className="w-full sm:w-[30rem] sm:pl-[5rem]">
             <div className="homeHeader pt-[10rem] text-center sm:text-left text-neutral-100">
               <motion.span
