@@ -301,7 +301,7 @@ export default function Home() {
         </div>
 
         {/* Page Two Start */}
-        <div className="appPageTwo h-fit bg-[#130D23] p-10 w-full">
+        <div className="appPageTwo h-fit min-w-screen bg-[#130D23] p-10 w-full">
           <div className="aboutContainer max-w-5xl mx-auto">
             <div className="aboutHeaderContainer flex gap-3 p-2 sm:p-5">
               <Terminal />
@@ -366,7 +366,7 @@ export default function Home() {
         </div>
 
         {/* Page Three Start */}
-        <div className="appPageThree h-fit bg-[#1F2A49] p-10 w-full text-white bg-[url('/img/dataFlowMobile.svg')] sm:bg-[url('/img/dataFlowFull.svg')] bg-no-repeat bg-center bg-cover">
+        <div className="appPageThree min-w-screen h-fit bg-[#1F2A49] p-10 w-full text-white bg-[url('/img/dataFlowMobile.svg')] sm:bg-[url('/img/dataFlowFull.svg')] bg-no-repeat bg-center bg-cover">
           <div className="projectsContainer max-w-5xl mx-auto">
             <div className="projectHeaderContainer flex gap-3 p-2 sm:p-5">
               <CodeBracket />
